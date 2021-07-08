@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="stylesheet" href="main.js" type="text/js">
+
+    <!-- Bootstrap 1:CSS 2:JS with Popper 3:Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+
+    <title>Veronica Romero</title>
+</head>
+<body>
+
+    <!-- ---------------------- NAVBAR ---------------------- -->
+    <div id="navbar">
+        <nav>
+            <button routerLink="" class="btn-nav-out">Home</button>
+            <div class="dropdown">
+                <button onclick="openDropdown()" id="menu-projects-button" class="btn-nav-out" >Projects</button>
+                <ul id="menu-projects-list" class="all-form sectionDisabled" aria-labelledby="navbarDropdown">
+                    <li routerLink="projects/disenoweb" class="btn-nav-out">disenoweb</li>
+                    <li routerLink="projects/fotografia" class="btn-nav-out">fotografia</li>
+                    <li routerLink="projects/disenografico" class="btn-nav-out">disenografico</li>
+                    <li routerLink="projects/ilustracion" class="btn-nav-out">ilustracion</li>
+                </ul>        
+            </div>
+            <button routerLink="about" class="btn-nav-out">About</button>
+            <button routerLink="contact" class="btn-nav-out">Contact</button>
+        </nav>
+    </div>
+
+    <!-- ---------------------- PROYECTOS ---------------------- -->
+    <div id="proyectos">
+
+        <table class="proyectos-table">
+            <tr>
+                <td class="proyetos-table-td"><i class="proyectos-i bi bi-grid-1x2-fill"></i></td>
+                <td class="proyetos-table-td"><i class="proyectos-i bi bi-camera-fill"></i></td>
+            </tr>
+            <tr>
+                <td class="proyetos-table-td"><i class="proyectos-i bi bi-bezier"></i></td>
+                <td class="proyetos-table-td"><i class="proyectos-i bi bi-brush-fill"></i></td>
+            </tr>
+        </table>
+
+    </div>
+
+    <!-- ---------------------- ABOUT ---------------------- -->
+    <div id="about">
+
+        <hr class="dotted-line">
+
+        <div class="card-content">
+            <p class="longText">
+                Hola! soy Verónica, vivo en Montevideo, Uruguay. <br>
+                Estudié Diseño en Comunicación Visual, HTML, CSS, algo de JavaScript, algo de Angular, Diseño UX / UI. <br>
+            </p>
+        </div>
+
+        <hr class="dotted-line">
+
+        <div id="timeline">
+            <!-- LDCV -->
+            <div class="card-content">
+                <a target="_blank" href="http://www.fadu.edu.uy/ldcv/">
+                    <h2 class="timeline-title">LDCV</h2>
+                    <p class="small">Licenciatura en Diseño de Comunicación Visual | Udelar</p>
+                </a>
+                <p>Sistemas de comunicación por medio  
+                    Composición, iluminación, uso del color, tipografías, significado de elementos visuales y las palabras y la relación entre éstas 
+                    en sus diversos niveles de lectura, desde un análisis crítico y sensible. <br>
+                    Prácticas con afiches, piezas gráficas editoriales, packaging, composición tipográfica, métodos de impresión, métodos de diseño digital, modelado 3d, fotografía, cinematografía, animación, diseño web.<br>
+                    Análisis de la historia de la comunicación visual en sus diversas áreas, desde la pintura, la escritura, los afiches, los periódicos, la televisión, el cine, etc. 
+                </p>
+            </div>
+
+            <!-- GA -->
+            <div class="card-content">
+                <a target="_blank" href="https://generalassemb.ly/">
+                    <h2>GA</h2>
+                    <p class="small">General Assembly</p>
+                </a>
+                <p>HTML5, CSS3</p>
+            </div>
+
+            <!-- IDF -->
+            <div class="card-content">
+                <a target="_blank" href="https://www.interaction-design.org/">
+                    <h2>IDF</h2>
+                    <p class="small">Interaction Design Foundation</p>  
+                </a>
+                <p>UX / UI Courses. <br>
+                Pattern design, human perception, human computer Interaction, use of colors, space, visual hints, how help the user to find what the user needs.</p>
+            </div>
+
+            <!-- El Taller -->
+            <div class="card-content">
+                <a href="https://www.tallerdeinformatica.edu.uy/">
+                    <h2>El Taller</h2>
+                    <p class="small">El Taller de Informática</p>    
+                </a>
+                <p>HTML, CSS, Bootstrap, Git, JavaScript, Typescript, Angular</p>
+            </div>
+
+            <!-- Udemy -->
+            <div class="card-content">
+                <a target="_blank" href="https://www.udemy.com/course/the-complete-web-development-bootcamp/">
+                    <h2>Udemy</h2>
+                    <p>Web Development Bootcamp by Angela Yu</p>
+                </a>
+                <p>(I'm actually taking this course)</p>
+                <p>HTML, CSS, Bootstrap, Web Design, Javascript ES6, DOM, jQuery, Node.js, Git, SQL, MongoDB, Mongoose, API, React.js</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- ---------------------- CONTACTO ---------------------- -->
+    <div id="contacto">
+        <div class="all-form">
+            <div class="form-floating mb-3">
+                <input formControlName="Name" type="email" class="form-control" id="floatingInput" placeholder="Write your name here">
+                <label for="floatingInput">Name</label>
+            </div>
+            <div class="form-floating">
+                <input formControlName="Email" type="password" class="form-control" id="floatingPassword" placeholder="Write your email here">
+                <label for="floatingPassword">E-mail</label>
+            </div>
+            <br>
+            <div class="form-floating">
+                <textarea formControlName="Message" class="form-control" placeholder="Write your message here" row="5" id="floatingTextarea"></textarea>
+                <label for="floatingTextarea">Message</label>
+            </div>
+            <br>
+        <button class="btn-red">Cancel</button>
+        <button class="btn-green right-div">Send</button>
+        </div>
+    </div>
+    
+</body>
+</html>
