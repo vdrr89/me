@@ -442,14 +442,19 @@ label {
   border-color: #000000b2;
 }
 
-#contacto > .all-form{
-    margin: 15% auto;
+.contacto-form{
+    margin: auto 15%;
 }
 
 /* ---------------------- DIAGRAMACION ---------------------- */
 
 #timeline > .card-content{
     margin: 15% 15%;
+    border-radius: 0px;
+    padding-left: 20px;
+}
+
+.border-container {
     border-left: 10px dotted #d93b95;
     border-radius: 0px;
     padding-left: 20px;
@@ -457,16 +462,13 @@ label {
 
 .timeline-title{
     display: list-item;
+    margin-left:40px;
 }
 
 .timeline-title::marker{
-    width: 25px;
-    height: 25px;
-    /* -moz-border-radius: 50%;
-    -webkit-border-radius: 50%;
-    border-radius: 50%; */
-    background: #d93b95;
-    /* border: transparent; */
+    font-size: 200%;
+    color: #d93b95;
+    letter-spacing: 0px
 }
 
 .principal-dot{
@@ -535,11 +537,21 @@ footer > ul > li {
   display: inline-block;
 }
 
+.footer-icon {
+    color: #fff;
+    margin: 0 10px;
+}
+
+.footer-icon:hover{
+    color: #d93b95;
+}
+
 /* ---------------------- CARDS ---------------------- */
 
 /* about */
 .card-content{
-    margin-top: 15%;
+    margin-top: 10%;
+    margin-bottom: 10%;
 }
 
 .vr-card-group { /* all cards */

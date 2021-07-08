@@ -11,3 +11,4 @@ function openDropdown(){
         menuProjectsList.classList.add("sectionDisabled");
     }
 }
+

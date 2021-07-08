@@ -20,18 +20,18 @@
     <!-- ---------------------- NAVBAR ---------------------- -->
     <div id="navbar">
         <nav>
-            <button routerLink="" class="btn-nav-out">Home</button>
+            <button href="/" class="btn-nav-out">Home</button>
             <div class="dropdown">
                 <button onclick="openDropdown()" id="menu-projects-button" class="btn-nav-out" >Projects</button>
                 <ul id="menu-projects-list" class="all-form sectionDisabled" aria-labelledby="navbarDropdown">
-                    <li routerLink="projects/disenoweb" class="btn-nav-out">disenoweb</li>
-                    <li routerLink="projects/fotografia" class="btn-nav-out">fotografia</li>
-                    <li routerLink="projects/disenografico" class="btn-nav-out">disenografico</li>
-                    <li routerLink="projects/ilustracion" class="btn-nav-out">ilustracion</li>
+                    <li href="" class="btn-nav-out">disenoweb</li>
+                    <li href="" class="btn-nav-out">fotografia</li>
+                    <li href="" class="btn-nav-out">disenografico</li>
+                    <li href="" class="btn-nav-out">ilustracion</li>
                 </ul>        
             </div>
-            <button routerLink="about" class="btn-nav-out">About</button>
-            <button routerLink="contact" class="btn-nav-out">Contact</button>
+            <button href="#about" class="btn-nav-out">About</button>
+            <button href="#contacto" class="btn-nav-out">Contact</button>
         </nav>
     </div>
 
@@ -54,6 +54,8 @@
     <!-- ---------------------- ABOUT ---------------------- -->
     <div id="about">
 
+        <a name="about"></a>
+
         <hr class="dotted-line">
 
         <div class="card-content">
@@ -68,61 +70,76 @@
         <div id="timeline">
             <!-- LDCV -->
             <div class="card-content">
-                <a target="_blank" href="http://www.fadu.edu.uy/ldcv/">
-                    <h2 class="timeline-title">LDCV</h2>
-                    <p class="small">Licenciatura en Diseño de Comunicación Visual | Udelar</p>
-                </a>
-                <p>Sistemas de comunicación por medio  
-                    Composición, iluminación, uso del color, tipografías, significado de elementos visuales y las palabras y la relación entre éstas 
-                    en sus diversos niveles de lectura, desde un análisis crítico y sensible. <br>
-                    Prácticas con afiches, piezas gráficas editoriales, packaging, composición tipográfica, métodos de impresión, métodos de diseño digital, modelado 3d, fotografía, cinematografía, animación, diseño web.<br>
-                    Análisis de la historia de la comunicación visual en sus diversas áreas, desde la pintura, la escritura, los afiches, los periódicos, la televisión, el cine, etc. 
-                </p>
+                <h2 class="timeline-title">LDCV</h2>
+                <div class="border-container">
+                    <a target="_blank" href="http://www.fadu.edu.uy/ldcv/">
+                        <p class="small">Licenciatura en Diseño de Comunicación Visual | Udelar</p>
+                    </a>
+                    <p>Sistemas de comunicación por medio  
+                        Composición, iluminación, uso del color, tipografías, significado de elementos visuales y las palabras y la relación entre éstas 
+                        en sus diversos niveles de lectura, desde un análisis crítico y sensible. <br>
+                        Prácticas con afiches, piezas gráficas editoriales, packaging, composición tipográfica, métodos de impresión, métodos de diseño digital, modelado 3d, fotografía, cinematografía, animación, diseño web.<br>
+                        Análisis de la historia de la comunicación visual en sus diversas áreas, desde la pintura, la escritura, los afiches, los periódicos, la televisión, el cine, etc. 
+                    </p>  
+                </div>
             </div>
 
             <!-- GA -->
             <div class="card-content">
-                <a target="_blank" href="https://generalassemb.ly/">
-                    <h2>GA</h2>
-                    <p class="small">General Assembly</p>
-                </a>
-                <p>HTML5, CSS3</p>
+                <h2 class="timeline-title">GA</h2>
+                <div class="border-container">
+                    <a target="_blank" href="https://generalassemb.ly/">
+                        <p class="small">General Assembly</p>
+                    </a>
+                    <p>HTML5, CSS3</p> 
+                </div>
+
             </div>
 
             <!-- IDF -->
             <div class="card-content">
-                <a target="_blank" href="https://www.interaction-design.org/">
-                    <h2>IDF</h2>
-                    <p class="small">Interaction Design Foundation</p>  
-                </a>
-                <p>UX / UI Courses. <br>
-                Pattern design, human perception, human computer Interaction, use of colors, space, visual hints, how help the user to find what the user needs.</p>
+                <h2 class="timeline-title">IDF</h2>
+                <div class="border-container">
+                    <a target="_blank" href="https://www.interaction-design.org/">
+                        <p class="small">Interaction Design Foundation</p>  
+                    </a>
+                    <p>UX / UI Courses. <br>
+                    Pattern design, human perception, human computer Interaction, use of colors, space, visual hints, how help the user to find what the user needs.</p>
+                </div>
             </div>
 
             <!-- El Taller -->
             <div class="card-content">
-                <a href="https://www.tallerdeinformatica.edu.uy/">
-                    <h2>El Taller</h2>
-                    <p class="small">El Taller de Informática</p>    
-                </a>
-                <p>HTML, CSS, Bootstrap, Git, JavaScript, Typescript, Angular</p>
+                <h2 class="timeline-title">El Taller</h2>
+                <div class="border-container">
+                    <a href="https://www.tallerdeinformatica.edu.uy/"></a>
+                        <p class="small">El Taller de Informática</p>    
+                    </a>
+                    <p>HTML, CSS, Bootstrap, Git, JavaScript, Typescript, Angular</p>                    
+                </div>
+
             </div>
 
             <!-- Udemy -->
             <div class="card-content">
-                <a target="_blank" href="https://www.udemy.com/course/the-complete-web-development-bootcamp/">
-                    <h2>Udemy</h2>
-                    <p>Web Development Bootcamp by Angela Yu</p>
-                </a>
-                <p>(I'm actually taking this course)</p>
-                <p>HTML, CSS, Bootstrap, Web Design, Javascript ES6, DOM, jQuery, Node.js, Git, SQL, MongoDB, Mongoose, API, React.js</p>
+                <h2 class="timeline-title">Udemy</h2>
+                <div class="border-container">
+                    <a target="_blank" href="https://www.udemy.com/course/the-complete-web-development-bootcamp/">
+                        <p>Web Development Bootcamp by Angela Yu</p>
+                    </a>
+                    <p>(I'm actually taking this course)</p>
+                    <p>HTML, CSS, Bootstrap, Web Design, Javascript ES6, DOM, jQuery, Node.js, Git, SQL, MongoDB, Mongoose, API, React.js</p>
+                </div>
             </div>
         </div>
     </div>
 
     <!-- ---------------------- CONTACTO ---------------------- -->
     <div id="contacto">
-        <div class="all-form">
+
+        <a name="contacto"></a>
+
+        <div class="all-form contacto-form">
             <div class="form-floating mb-3">
                 <input formControlName="Name" type="email" class="form-control" id="floatingInput" placeholder="Write your name here">
                 <label for="floatingInput">Name</label>
@@ -140,6 +157,19 @@
         <button class="btn-red">Cancel</button>
         <button class="btn-green right-div">Send</button>
         </div>
+    </div>
+
+    <!-- ---------------------- FOOTER ---------------------- -->
+    <div id="footer">
+        <footer>
+            <ul>
+                <li><a class="" target="_blank" href="https://github.com/vdrr89"><i class="footer-icon bi bi-github"></i></a></li>
+                <li><a target="_blank" href="https://codepen.io/vdrr89"><i class="footer-icon fab fa-codepen"></i></a></li>
+                <li><a target="_blank" href="https://www.tiwitter.com/vdrr89"><i class="footer-icon bi bi-twitter"></i></a></li>
+                <li><a target="_blank" href="mailto:vdrr89@gmail.com"><i class="footer-icon bi bi-envelope-fill"></i></a></li>
+                <li><a target="_blank" href="https://api.whatsapp.com=/send?phone=59892103185"><i class="footer-icon bi bi-whatsapp"></i></a></li>
+            </ul>
+        </footer> 
     </div>
     
 </body>
