@@ -5,8 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="style.css" type="text/css">
-    <link rel="stylesheet" href="fonts.css" type="text/js">
+    <!-- My stylesheets -->
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="css/fonts.css" type="text/css">
+    <link rel="stylesheet" href="css/responsive.css" type="text/css">
 
     <!-- Bootstrap 1:CSS 2:JS with Popper 3:Icons -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
@@ -21,18 +23,21 @@
     <div id="navbar">
         <nav>
             <button onclick="openHamb()" id="hamburger-menu-icon" class="btn-nav-out btn-hamb"><i class="bi bi-list"></i></button>
-            <button href="/" class="btn-nav-out">Home</button>
-            <div class="dropdown">
-                <button onclick="openDropdown()" id="menu-projects-button" class="btn-nav-out" >Projects</button>
-                <ul id="menu-projects-list" class="all-form sectionDisabled" aria-labelledby="navbarDropdown">
-                    <li href="" class="btn-nav-out">disenoweb</li>
-                    <li href="" class="btn-nav-out">fotografia</li>
-                    <li href="" class="btn-nav-out">disenografico</li>
-                    <li href="" class="btn-nav-out">ilustracion</li>
-                </ul>        
+            <div id="menu-list">
+                <button href="/" class="btn-nav-out">Home</button>
+                <div class="dropdown">
+                    <button onclick="openDropdown()" id="menu-projects-button" class="btn-nav-out" >Projects</button>
+                    <ul id="menu-projects-list" class="all-form sectionDisabled" aria-labelledby="navbarDropdown">
+                        <li href="" class="btn-nav-out">disenoweb</li>
+                        <li href="" class="btn-nav-out">fotografia</li>
+                        <li href="" class="btn-nav-out">disenografico</li>
+                        <li href="" class="btn-nav-out">ilustracion</li>
+                    </ul>        
+                </div>
+                <button href="#about" class="btn-nav-out">About</button>
+                <button href="#contacto" class="btn-nav-out">Contact</button>                
             </div>
-            <button href="#about" class="btn-nav-out">About</button>
-            <button href="#contacto" class="btn-nav-out">Contact</button>
+
         </nav>
     </div>
 
@@ -140,7 +145,7 @@
 
         <a name="contacto"></a>
 
-        <div class="all-form contacto-form">
+        <form class="all-form contacto-form" action="https://mailthis.to/" method="POST" encType="multipart/form-data">
             <div class="form-floating mb-3">
                 <input formControlName="Name" type="email" class="form-control" id="floatingInput" placeholder="Write your name here">
                 <label for="floatingInput">Name</label>
@@ -154,10 +159,14 @@
                 <textarea formControlName="Message" class="form-control" placeholder="Write your message here" row="5" id="floatingTextarea"></textarea>
                 <label for="floatingTextarea">Message</label>
             </div>
+            <input type="hidden" name="_subject" value="Contact form submitted">
+            <input type="hidden" name="_after" value="https://myhomepage.net/">
+            <input type="hidden" name="_honeypot" value="">
+            <input type="hidden" name="_confirmation" value="">
             <br>
-        <button class="btn-red">Cancel</button>
-        <button class="btn-green right-div">Send</button>
-        </div>
+            <button class="btn-red">Cancel</button>
+            <button class="btn-green right-div">Send</button>
+        </form>
     </div>
 
     <!-- ---------------------- FOOTER ---------------------- -->

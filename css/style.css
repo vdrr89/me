@@ -467,6 +467,20 @@ nav {
     box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
+nav > .dropdown {
+  margin: 4px auto;
+}
+
+#menu-list {
+  display: inline-flex;
+  margin: 0 auto;
+  width: 100%;
+}
+
+#menu-projects-list > li{
+  display: block;
+}
+
 /* elemento alineado a la derecha */
 .right-div {
     margin-right: 1%;
@@ -528,69 +542,4 @@ footer > ul > li {
 
 #proyectos{
     height: 70vh;
-}
-
-/* ====================== SMALL DEVICES ====================== */
-
-@media only screen and (max-width: 900px) {
-    /* posts en grid */
-  .vr-card-group {
-      grid-template-columns: auto auto;
-  }
-  
-  /* button,
-  nav > button {
-    padding: 8px 16px;
-    margin: 4px 2px;
-  } */
-
-  /* NAVIGATION */
-  nav {
-      display: inline-grid;
-  }
-
-  .btn-hamb {
-      display: inline-grid;
-  }
-
-  .btn-nav-out{
-    width: 100%;
-  }
-
-  /* ABOUT */
-
-  .longText {
-    padding: 10%;
-  }
-
-  #timeline > .card-content {
-    margin: 15% 10% 15% 0;
-  }
-
-  /* CONTACT */
-  .contacto-form {
-    margin: 5%;
-}
-
-  /* BUTTONS */
-
-  .btn-red, 
-  .btn-green{
-    padding: 8px 16px;
-  }
-
-
-
-}
-
-
-@media only screen and (max-width: 600px){
-    /* posts en grid */
-    .vr-card-group {
-        grid-template-columns: auto;
-    }
-
-    nav {
-        float: none;
-    }
 }

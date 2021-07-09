@@ -1,0 +1,75 @@
+/* ====================== SMALL DEVICES ====================== */
+
+@media only screen and (max-width: 900px) {
+    body{
+      width: 100%;
+      height: 100%;
+    }
+    
+    /* posts en grid */
+    .vr-card-group {
+        grid-template-columns: auto auto;
+    }
+  
+    /* NAVIGATION */
+    nav {
+        display: inline-grid;
+    }
+  
+    #hamburger-menu-icon{
+      display: flex;
+      margin-top: 0;
+    }
+  
+    /* .btn-hamb {
+      display: inline-grid;
+    } */
+  
+    .btn-nav-out{
+      width: 100%;
+    }
+  
+    #menu-list > button {
+      display: block;
+    }
+  
+    #menu-projects-list > li{
+      display: block;
+    }
+  
+    /* ABOUT */
+  
+    .longText {
+      padding: 10%;
+    }
+  
+    #timeline > .card-content {
+      margin: 15% 10% 15% 0;
+    }
+  
+    /* CONTACT */
+    .contacto-form {
+      margin: 5%;
+  }
+  
+    /* BUTTONS */
+  
+    .btn-red, 
+    .btn-green{
+      padding: 8px 16px;
+    }
+  
+  }
+  
+  
+  @media only screen and (max-width: 600px){
+      /* posts en grid */
+      .vr-card-group {
+          grid-template-columns: auto;
+      }
+  
+      nav {
+          float: none;
+      }
+  }
+  
