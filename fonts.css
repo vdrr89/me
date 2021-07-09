@@ -1,0 +1,144 @@
+/* ---------------------- NOTAS ---------------------- */
+
+/* 
+
+MAMARRACHO: no puede ser que hayan 2 colores principales
+
+NEW THEME
+
+#2e8ad1 celeste / primary color
+#13588d celeste oscuro 
+
+#d93b95 rosa / primary color: hover
+
+#1f1f1f / dark gray / pes haches
+#787878 / light gray
+
+#901 red / cancel
+#290 green / ok
+
+#da1 gold
+#5c4406 dark gold
+
+/ for lines (blue to sky blue gradient)
+background: rgb(2,0,36);
+background: linear-gradient(135deg, rgba(2,0,36,1) 0%, rgba(43,82,152,1) 49%, rgba(0,212,255,1) 97%);
+
+OLD THEME:
+
+LINKS color principal: #225ea3 (azul link)
+links color secundario: #323dbd (azul violeta)
+
+guardar color para otro momento: #fdfcf7 (casi blanco beige)
+
+*/
+
+/* ====================== FUENTES ====================== */
+
+/* 800 HACHES / 100 PES / 400 BOLD */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;400;800&display=swap');
+/* font-family: 'Raleway', sans-serif; */
+
+/* ---------------------- HACHES ---------------------- */
+  
+h1, h2, h3, h4 {
+    color: #1f1f1f;
+    text-shadow: 2px 2px #ffffff;
+    font-size: 4rem;
+    font-weight: 800;
+    font-family: 'Raleway', sans-serif;
+  }
+
+h5, h6 {  /* es igual pero más chiquito */
+  color: #1f1f1f;
+  text-shadow: 2px 2px #ffffff;
+  font-size: 2rem;
+  font-weight: 800;
+  font-family: 'Raleway', sans-serif;
+}
+
+/* ---------------------- PES ---------------------- */
+
+.text-block {
+  background: #fff;
+  border: solid 2px #000;
+  border-radius: 20px;
+  padding: 4rem;
+  width: fit-content;
+  margin: 1rem auto;
+  box-shadow: 2px 4px 8px #00000065;
+}
+
+p, li, td, blockquote {
+  color: #1f1f1f;
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+}
+
+.special {
+  color: #1f1f1f;
+  font-size: 1.2rem;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 800;
+  text-shadow: 2px 2px 2px #64626246;
+}
+
+th, button {
+  color: #1f1f1f;
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 800;
+  text-shadow: 2px 2px 2px #63636346;
+}
+
+.small {
+  font-family: 'Raleway', sans-serif;
+  color: #1f1f1f; 
+  font-weight: 400; 
+  font-size: 0.7rem;
+  line-height: 0.9rem;
+}
+
+.longText{
+  font-family: 'Raleway', sans-serif;
+  max-width: 600px;
+  text-align: left;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+blockquote {
+  font-style: italic;
+}
+
+/* ---------------------- LIS ---------------------- */
+
+li{
+  list-style: none;
+}
+
+/* ---------------------- AS ---------------------- */
+
+a {
+  color: #2e8ad1;
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+}
+
+a:link, 
+a:visited,
+nav > a:link, 
+nav > a:visited {
+  text-decoration: none;
+  color: #13588d;
+}
+
+a:hover {
+  text-decoration: none;
+  color:#d93b95;
+}

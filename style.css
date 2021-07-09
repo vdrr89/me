@@ -1,4 +1,4 @@
-/* ---------------------- NOTES ---------------------- */
+/* ---------------------- NOTAS ---------------------- */
 
 /* 
 
@@ -33,16 +33,6 @@ guardar color para otro momento: #fdfcf7 (casi blanco beige)
 
 */
 
-/* ---------------------- FUENTES ---------------------- */
-
-/* 800 HACHES / 100 PES / 400 BOLD */
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;400;800&display=swap');
-/* font-family: 'Raleway', sans-serif; */
-
-/* bootstrap icons */
-@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css");
-
-
 /* ---------------------- SELECCIONES ---------------------- */
 
 *::selection {
@@ -60,117 +50,12 @@ html, body{
   
   z-index: -50;
   height: 100%;
-
-  background-repeat: no-repeat;
-  background-size: cover;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
 }
 
-/* ---------------------- HACHES ---------------------- */
-  
-h1, h2, h3, h4 {
-    color: #1f1f1f;
-    text-shadow: 2px 2px #ffffff;
-    font-size: 4rem;
-    font-weight: 800;
-    font-family: 'Raleway', sans-serif;
-  }
+/* ====================== ICONOS Y BOTONES ====================== */
 
-h5, h6 {  /* es igual pero más chiquito */
-  color: #1f1f1f;
-  text-shadow: 2px 2px #ffffff;
-  font-size: 2rem;
-  font-weight: 800;
-  font-family: 'Raleway', sans-serif;
-}
-
-/* ---------------------- PES ---------------------- */
-
-.text-block {
-  background: #fff;
-  border: solid 2px #000;
-  border-radius: 20px;
-  padding: 4rem;
-  width: fit-content;
-  margin: 1rem auto;
-  box-shadow: 2px 4px 8px #00000065;
-}
-
-p, li, td, blockquote {
-  color: #1f1f1f;
-  font-size: 1.2rem;
-  line-height: 1.8rem;
-  font-family: 'Raleway', sans-serif;
-  font-weight: 400;
-}
-
-.special {
-  color: #1f1f1f;
-  font-size: 1.2rem;
-  font-family: 'Raleway', sans-serif;
-  font-weight: 800;
-  text-shadow: 2px 2px 2px #64626246;
-}
-
-th, button {
-  color: #1f1f1f;
-  font-size: 1.2rem;
-  line-height: 1.8rem;
-  font-family: 'Raleway', sans-serif;
-  font-weight: 800;
-  text-shadow: 2px 2px 2px #63636346;
-}
-
-.small {
-  font-family: 'Raleway', sans-serif;
-  color: #1f1f1f; 
-  font-weight: 400; 
-  font-size: 0.7rem;
-  line-height: 0.9rem;
-}
-
-.longText{
-  font-family: 'Raleway', sans-serif;
-  max-width: 600px;
-  text-align: left;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-blockquote {
-  font-style: italic;
-}
-
-/* ---------------------- LIS ---------------------- */
-
-li{
-  list-style: none;
-}
-
-/* ---------------------- AS ---------------------- */
-
-a {
-  color: #2e8ad1;
-  font-size: 1.2rem;
-  line-height: 1.8rem;
-  font-family: 'Raleway', sans-serif;
-  font-weight: 400;
-}
-
-a:link, 
-a:visited,
-nav > a:link, 
-nav > a:visited {
-  text-decoration: none;
-  color: #13588d;
-}
-
-a:hover {
-  text-decoration: none;
-  color:#d93b95;
-}
+/* bootstrap icons */
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css");
 
 /* ---------------------- TABLES ---------------------- */
   
@@ -178,11 +63,17 @@ th, td {
 padding:0.5vw;
 }
   
-/* ---------------------- FORMAS Y BOTONES ---------------------- */
-
 /* ---------------------- BUTTONS ---------------------- */
 
 /* BTN NAV */
+
+.btn-hamb {
+    display: none;
+}
+
+nav > button {
+    margin-bottom: auto;
+}
 
 .btn-nav-out {
   font-family: 'Raleway', sans-serif;
@@ -418,7 +309,11 @@ transform: translateY(7px);
     display: none;
 }
 
-/* ---------------------- FORMS ---------------------- */
+.sectionEnabled{
+    display:block;
+}
+
+/* ---------------------- CONTENEDORES ---------------------- */
 
 /* FORM */
 .form-box {
@@ -446,7 +341,63 @@ label {
     margin: auto 15%;
 }
 
-/* ---------------------- DIAGRAMACION ---------------------- */
+/* about */
+.card-content{ /* posts en about: timeline */
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+.vr-card-group { /* posts en grid / all cards */
+  /* width: 100%; */
+  max-width: 100%;
+  margin: 0 auto;
+
+  display: grid;
+
+  gap: 2vw;
+  grid-auto-flow: inherit;
+  grid-template-columns:auto auto auto auto;
+  grid-template-rows: auto;
+}
+
+.vr-card { /* posts en grid / only 1 card */
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  top: 0;
+  width: 100%;
+
+  border: solid 3px #1f1f1f;
+  border-radius: 20px;
+  background: transparent;
+  box-shadow: 0 2px 5px #1f1f1f;
+
+  transition: all .1s ease-in;
+}
+
+.vr-card:hover {
+  top: -2px;
+  box-shadow: 0 4px 5px #1f1f1faf;
+}
+
+.card-img {
+  position: absolute;
+  display: block;
+  text-align: center;
+  border: solid 6px #1f1f1f;
+  border-radius: 10px;
+}
+
+.card-text {
+  position: relative;
+  top: -40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #1f1f1f;
+  text-align: center;
+}
+
+/* ====================== DIAGRAMACION ====================== */
 
 #timeline > .card-content{
     margin: 15% 15%;
@@ -497,11 +448,8 @@ label {
     display: table;
 }
 
-nav > button {
-    margin-bottom: auto;
-}
-
 /* ---------------------- MENU NAV Y FOOTER ---------------------- */
+
 nav {
     position: fixed;
     position: -webkit-sticky; /* Safari */
@@ -546,75 +494,7 @@ footer > ul > li {
     color: #d93b95;
 }
 
-/* ---------------------- CARDS ---------------------- */
-
-/* about */
-.card-content{
-    margin-top: 10%;
-    margin-bottom: 10%;
-}
-
-.vr-card-group { /* all cards */
-  /* width: 100%; */
-  max-width: 100%;
-  margin: 0 auto;
-
-  display: grid;
-
-  gap: 2vw;
-  grid-auto-flow: inherit;
-  grid-template-columns:auto auto auto auto;
-  grid-template-rows: auto;
-}
-
-.vr-card { /* only 1 card */
-  display: flex;
-  flex-direction: row;
-  position: relative;
-  top: 0;
-  width: 100%;
-
-  border: solid 3px #1f1f1f;
-  border-radius: 20px;
-  background: transparent;
-  box-shadow: 0 2px 5px #1f1f1f;
-
-  transition: all .1s ease-in;
-}
-
-.vr-card:hover {
-  top: -2px;
-  box-shadow: 0 4px 5px #1f1f1faf;
-}
-
-.card-img {
-  position: absolute;
-  display: block;
-  text-align: center;
-  border: solid 6px #1f1f1f;
-  border-radius: 10px;
-}
-
-.card-text {
-  position: relative;
-  top: -40%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: #1f1f1f;
-  text-align: center;
-}
-
-@media only screen and (max-width: 900px) {
-  .vr-card-group {
-      grid-template-columns: auto auto;
-  }
-}
-
-@media only screen and (max-width: 600px){
-  .vr-card-group {
-      grid-template-columns: auto;
-  }
-}
+/* ---------------------- PROYECTOS GRID ---------------------- */
 
 /* grid icon link para proyectos */
 .proyectos-table {
@@ -643,27 +523,67 @@ footer > ul > li {
     height: 70vh;
 }
 
-/* ---------------------- MEDIA SCREEN ---------------------- */
+/* ====================== SMALL DEVICES ====================== */
 
-/* PC CHICA */
-@media screen and (max-width:900px) {
-    button,
-    nav > button {
-      padding: 8px 16px;
-      margin: 4px 2px;
-    }
-  
-    input, 
-    .input {
-      padding: 8px 16px;
-      margin: 4px 2px;
-    }
+@media only screen and (max-width: 900px) {
+    /* posts en grid */
+  .vr-card-group {
+      grid-template-columns: auto auto;
   }
   
-  /* TABLET */
-  @media screen and (max-width: 760px) {
-      nav {
-          float: none;
-      }
+  /* button,
+  nav > button {
+    padding: 8px 16px;
+    margin: 4px 2px;
+  } */
+
+  /* NAVIGATION */
+  nav {
+      display: inline-grid;
+  }
+
+  .btn-hamb {
+      display: inline-grid;
+  }
+
+  .btn-nav-out{
+    width: 100%;
+  }
+
+  /* ABOUT */
+
+  .longText {
+    padding: 10%;
+  }
+
+  #timeline > .card-content {
+    margin: 15% 10% 15% 0;
+  }
+
+  /* CONTACT */
+  .contacto-form {
+    margin: 5%;
+}
+
+  /* BUTTONS */
+
+  .btn-red, 
+  .btn-green{
+    padding: 8px 16px;
+  }
+
+
+
+}
+
+
+@media only screen and (max-width: 600px){
+    /* posts en grid */
+    .vr-card-group {
+        grid-template-columns: auto;
     }
 
+    nav {
+        float: none;
+    }
+}
