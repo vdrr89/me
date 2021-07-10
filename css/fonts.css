@@ -122,20 +122,18 @@ li{
 
 /* ---------------------- AS ---------------------- */
 
-a {
-  color: #2e8ad1;
+a{
+  color: #2eaaff;
   font-size: 1.2rem;
   line-height: 1.8rem;
   font-family: 'Raleway', sans-serif;
   font-weight: 400;
+  text-decoration: none;
 }
 
-a:link, 
-a:visited,
-nav > a:link, 
-nav > a:visited {
+a:visited {
   text-decoration: none;
-  color: #13588d;
+  color: #0c1c53;
 }
 
 a:hover {

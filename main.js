@@ -6,10 +6,10 @@ var menuProjectsList = document.getElementById('menu-projects-list');
 // --- HAMBURGER MENU ---
 
 function openHamb(){
-    if(menuList.style.display === "inline-flex"){
+    if(menuList.style.display === "list-item"){
         menuList.style.display = "none";
     } else {
-        menuList.style.display = "inline-flex";
+        menuList.style.display = "list-item";
     }
 }
 

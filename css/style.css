@@ -71,8 +71,10 @@ padding:0.5vw;
     display: none;
 }
 
-nav > button {
-    margin-bottom: auto;
+nav > button, 
+nav > div > button {
+    /* margin-bottom: auto; */
+    top: 0;
 }
 
 .btn-nav-out {
@@ -337,6 +339,14 @@ label {
   border-color: #000000b2;
 }
 
+#navbar > .all-form {
+  max-width: 250px;
+  left: 29%;
+  top: 11%;
+  position: absolute;
+  background-color: #fff;
+}
+
 .contacto-form{
     margin: auto 15%;
 }
@@ -475,6 +485,7 @@ nav > .dropdown {
   display: inline-flex;
   margin: 0 auto;
   width: 100%;
+  position: relative;
 }
 
 #menu-projects-list > li{
@@ -500,6 +511,7 @@ footer {
 
 footer > ul {
   display: inline;
+  padding-left: 0;
 }
 
 footer > ul > li {
@@ -519,8 +531,8 @@ footer > ul > li {
 
 /* grid icon link para proyectos */
 .proyectos-table {
-    margin: 10% auto;
-    height: 40vh;
+  margin-top: 15%;
+  text-align: center;
 }
 
 .proyetos-table-td{
@@ -541,5 +553,5 @@ footer > ul > li {
 /* ---------------------- DIV ---------------------- */
 
 #proyectos{
-    height: 70vh;
+  height: 50vh;
 }

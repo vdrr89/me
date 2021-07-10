@@ -21,39 +21,35 @@
 
     <!-- ---------------------- NAVBAR ---------------------- -->
     <div id="navbar">
+
         <nav>
             <button onclick="openHamb()" id="hamburger-menu-icon" class="btn-nav-out btn-hamb"><i class="bi bi-list"></i></button>
             <div id="menu-list">
                 <button href="/" class="btn-nav-out">Home</button>
-                <div class="dropdown">
-                    <button onclick="openDropdown()" id="menu-projects-button" class="btn-nav-out" >Projects</button>
-                    <ul id="menu-projects-list" class="all-form sectionDisabled" aria-labelledby="navbarDropdown">
-                        <li href="" class="btn-nav-out">disenoweb</li>
-                        <li href="" class="btn-nav-out">fotografia</li>
-                        <li href="" class="btn-nav-out">disenografico</li>
-                        <li href="" class="btn-nav-out">ilustracion</li>
-                    </ul>        
-                </div>
+                <button onclick="openDropdown()" id="menu-projects-button" class="btn-nav-out" >Projects</button>
                 <button href="#about" class="btn-nav-out">About</button>
                 <button href="#contacto" class="btn-nav-out">Contact</button>                
             </div>
-
         </nav>
+
+        <ul id="menu-projects-list" class="all-form sectionDisabled" aria-labelledby="navbarDropdown">
+            <li href="" class="btn-nav-out"><i class="bi bi-grid-1x2-fill"></i>  disenoweb</li>
+            <li href="" class="btn-nav-out"><i class="bi bi-camera-fill"></i>  fotografia</li>
+            <li href="" class="btn-nav-out"><i class="bi bi-bezier"></i>  disenografico</li>
+            <li href="" class="btn-nav-out"><i class="bi bi-brush-fill"></i>  ilustracion</li>
+        </ul> 
+
     </div>
 
     <!-- ---------------------- PROYECTOS ---------------------- -->
     <div id="proyectos">
 
-        <table class="proyectos-table">
-            <tr>
-                <td class="proyetos-table-td"><i class="proyectos-i bi bi-grid-1x2-fill"></i></td>
-                <td class="proyetos-table-td"><i class="proyectos-i bi bi-camera-fill"></i></td>
-            </tr>
-            <tr>
-                <td class="proyetos-table-td"><i class="proyectos-i bi bi-bezier"></i></td>
-                <td class="proyetos-table-td"><i class="proyectos-i bi bi-brush-fill"></i></td>
-            </tr>
-        </table>
+        <div class="proyectos-table">
+            <i class="proyetos-table-td proyectos-i bi bi-grid-1x2-fill"></i>
+            <i class="proyetos-table-td proyectos-i bi bi-camera-fill"></i>
+            <i class="proyetos-table-td proyectos-i bi bi-bezier"></i>
+            <i class="proyetos-table-td proyectos-i bi bi-brush-fill"></i>
+        </div>
 
     </div>
 
@@ -78,8 +74,8 @@
             <div class="card-content">
                 <h2 class="timeline-title">LDCV</h2>
                 <div class="border-container">
-                    <a target="_blank" href="http://www.fadu.edu.uy/ldcv/">
-                        <p class="small">Licenciatura en Diseño de Comunicación Visual | Udelar</p>
+                    <a style="color: #2eaaff; font-weight: 400; font-size: 0.7rem; line-height: 0.9rem; text-decoration: none;" target="_blank" href="http://www.fadu.edu.uy/ldcv/">
+                        Licenciatura en Diseño de Comunicación Visual | Udelar
                     </a>
                     <p>Sistemas de comunicación por medio  
                         Composición, iluminación, uso del color, tipografías, significado de elementos visuales y las palabras y la relación entre éstas 
@@ -94,8 +90,8 @@
             <div class="card-content">
                 <h2 class="timeline-title">GA</h2>
                 <div class="border-container">
-                    <a target="_blank" href="https://generalassemb.ly/">
-                        <p class="small">General Assembly</p>
+                    <a style="color: #2eaaff; font-weight: 400; font-size: 0.7rem; line-height: 0.9rem; text-decoration: none;" target="_blank" href="https://generalassemb.ly/">
+                        General Assembly
                     </a>
                     <p>HTML5, CSS3</p> 
                 </div>
@@ -106,8 +102,8 @@
             <div class="card-content">
                 <h2 class="timeline-title">IDF</h2>
                 <div class="border-container">
-                    <a target="_blank" href="https://www.interaction-design.org/">
-                        <p class="small">Interaction Design Foundation</p>  
+                    <a style="color: #2eaaff; font-weight: 400; font-size: 0.7rem; line-height: 0.9rem; text-decoration: none;" target="_blank" href="https://www.interaction-design.org/">
+                        Interaction Design Foundation  
                     </a>
                     <p>UX / UI Courses. <br>
                     Pattern design, human perception, human computer Interaction, use of colors, space, visual hints, how help the user to find what the user needs.</p>
@@ -118,8 +114,8 @@
             <div class="card-content">
                 <h2 class="timeline-title">El Taller</h2>
                 <div class="border-container">
-                    <a href="https://www.tallerdeinformatica.edu.uy/"></a>
-                        <p class="small">El Taller de Informática</p>    
+                    <a style="color: #2eaaff; font-weight: 400; font-size: 0.7rem; line-height: 0.9rem; text-decoration: none;" href="https://www.tallerdeinformatica.edu.uy/">
+                        El Taller de Informática    
                     </a>
                     <p>HTML, CSS, Bootstrap, Git, JavaScript, Typescript, Angular</p>                    
                 </div>
@@ -130,8 +126,8 @@
             <div class="card-content">
                 <h2 class="timeline-title">Udemy</h2>
                 <div class="border-container">
-                    <a target="_blank" href="https://www.udemy.com/course/the-complete-web-development-bootcamp/">
-                        <p>Web Development Bootcamp by Angela Yu</p>
+                    <a style="color: #2eaaff; font-weight: 400; font-size: 0.7rem; line-height: 0.9rem; text-decoration: none;" target="_blank" href="https://www.udemy.com/course/the-complete-web-development-bootcamp/">
+                        Web Development Bootcamp by Angela Yu
                     </a>
                     <p>(I'm actually taking this course)</p>
                     <p>HTML, CSS, Bootstrap, Web Design, Javascript ES6, DOM, jQuery, Node.js, Git, SQL, MongoDB, Mongoose, API, React.js</p>
@@ -174,7 +170,7 @@
         <footer>
             <ul>
                 <li><a class="" target="_blank" href="https://github.com/vdrr89"><i class="footer-icon bi bi-github"></i></a></li>
-                <li><a target="_blank" href="https://codepen.io/vdrr89"><i class="footer-icon fab fa-codepen"></i></a></li>
+                <li><a target="_blank" href="https://codepen.io/vdrr89"><i class="footer-icon fab fa-codepen">C</i></a></li>
                 <li><a target="_blank" href="https://www.tiwitter.com/vdrr89"><i class="footer-icon bi bi-twitter"></i></a></li>
                 <li><a target="_blank" href="mailto:vdrr89@gmail.com"><i class="footer-icon bi bi-envelope-fill"></i></a></li>
                 <li><a target="_blank" href="https://api.whatsapp.com=/send?phone=59892103185"><i class="footer-icon bi bi-whatsapp"></i></a></li>
