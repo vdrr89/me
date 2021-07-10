@@ -22,22 +22,33 @@
     <!-- ---------------------- NAVBAR ---------------------- -->
     <div id="navbar">
 
+        <!-- barra de menu (arriba) -->
         <nav>
             <button onclick="openHamb()" id="hamburger-menu-icon" class="btn-nav-out btn-hamb"><i class="bi bi-list"></i></button>
             <div id="menu-list">
-                <button href="/" class="btn-nav-out">Home</button>
+                <button onclick="smoothScroll(document.getElementById('proyectos'))" class="btn-nav-out">Home</button>
                 <button onclick="openDropdown()" id="menu-projects-button" class="btn-nav-out" >Projects</button>
-                <button href="#about" class="btn-nav-out">About</button>
-                <button href="#contacto" class="btn-nav-out">Contact</button>                
+                <button onclick="smoothScroll(document.getElementById('about'))" class="btn-nav-out">About</button>
+                <button onclick="smoothScroll(document.getElementById('contacto'))" class="btn-nav-out">Contact</button>                
             </div>
         </nav>
 
+        <!-- dropdown list del menu proyectos -->
         <ul id="menu-projects-list" class="all-form sectionDisabled" aria-labelledby="navbarDropdown">
             <li href="" class="btn-nav-out"><i class="bi bi-grid-1x2-fill"></i>  Diseño Web</li>
             <li href="" class="btn-nav-out"><i class="bi bi-camera-fill"></i>  Fotografía</li>
             <li href="" class="btn-nav-out"><i class="bi bi-bezier"></i>  Diseño Gráfico</li>
             <li href="" class="btn-nav-out"><i class="bi bi-brush-fill"></i>  Ilustración</li>
         </ul> 
+
+        <!-- mini menu proyectos desplegada en el lateral -->
+        <!-- ul: class="sectionDisabled" -->
+        <div id="side-menu-projects-list right-div" class="btn-nav-side">
+            <i class="bi bi-grid-1x2-fill"></i><br>
+            <i class="bi bi-camera-fill"></i><br>
+            <i class="bi bi-bezier"></i><br>
+            <i class="bi bi-brush-fill"></i><br>
+        </div> 
 
     </div>
 

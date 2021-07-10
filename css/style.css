@@ -114,6 +114,19 @@ border-color: #1f1f1f;
   color: #1f1f1f;
 }
 
+/* BTN NAV SIDE*/
+.btn-nav-side{
+    display: block;
+    position: fixed;
+    top: 12%;
+    right: 2%;
+    float: right;
+  }
+
+  .btn-nav-side > i {
+    font-size: 3vw;
+  }
+
 /* BTN OUT */
 .btn-out {
   font-family: 'Raleway', sans-serif;
@@ -343,7 +356,7 @@ label {
   max-width: 250px;
   left: 29%;
   top: 11%;
-  position: absolute;
+  position: fixed;
   background-color: #fff;
 }
 

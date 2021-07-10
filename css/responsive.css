@@ -22,7 +22,7 @@
         max-width: 250px;
         left: 17%;
         top: 30%;
-        position: absolute;
+        position: fixed;
         background-color: #fff;
         z-index: 20;
       }
