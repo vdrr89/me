@@ -1,9 +1,9 @@
-// var menuHamburgerButton = document.getElementById('hamburger-menu-icon');
+// ====================== NAVIGATION ======================
+
 var menuList = document.getElementById('menu-list');
-// var menuProjectButton = document.getElementById('menu-projects-button');
 var menuProjectsList = document.getElementById('menu-projects-list');
 
-// --- HAMBURGER MENU ---
+// ---------------------- HAMBURGER MENU ----------------------
 
 function openHamb(){
     if(menuList.style.display === "list-item"){
@@ -13,7 +13,7 @@ function openHamb(){
     }
 }
 
-// --- DROPDOWN PROYECTOS MENU ---
+// ---------------------- DROPDOWN PROYECTOS MENU ----------------------
 
 function openDropdown(){
     if(menuProjectsList.style.display === "block"){
@@ -23,7 +23,7 @@ function openDropdown(){
     }
 }
 
-// --- NAVBAR LINKS SCROLL TO DIV ---
+// ---------------------- NAVBAR LINKS SCROLL TO DIV ----------------------
 
 window.smoothScroll = function(target) {
     var scrollContainer = target;
@@ -47,4 +47,75 @@ window.smoothScroll = function(target) {
     // start scrolling
     scroll(scrollContainer, scrollContainer.scrollTop, targetY, 0);
 }
+
+// ---------------------- PROYECTS TABS ----------------------
+
+var proyTabs = [
+    {
+        varName: 'disWebCards',
+        htmlId: 'tabs-diseno-web',
+        funcName: 'opernProyDisWeb'
+    },
+    {
+        varName: 'fotoCards',
+        htmlId: 'tabs-fotografia',
+        funcName: 'opernProyFoto'
+    },
+    {
+        varName: 'fotoLandCards',
+        htmlId: 'tabs-fotografia-landscape',
+        funcName: 'opernProyFotoLand'
+    },
+    {
+        varName: 'fotoObjCards',
+        htmlId: 'tabs-fotografia-objetos',
+        funcName: 'opernProyFotoObj'
+    },
+    {
+        varName: 'fotoTextCards',
+        htmlId: 'tabs-fotografia-texturas',
+        funcName: 'opernProyFotoText'
+    },
+    {
+        varName: 'fotoFotoIlCards',
+        htmlId: 'tabs-fotografia-fotoilustracion',
+        funcName: 'opernProyFotoIl'
+    },
+    {
+        varName: 'fotoPhotoCards',
+        htmlId: 'tabs-fotografia-photoshop',
+        funcName: 'opernProyFotoPhoto'
+    },
+    {
+        varName: 'disGrafCards',
+        htmlId: 'tabs-diseno-grafico',
+        funcName: 'opernProyDisGraf'
+    },
+    {
+        varName: 'iluCards',
+        htmlId: 'tabs-ilustracion',
+        funcName: 'opernProyIlu'
+    }
+]
+
+// PROYECT TABS OPEN/CLOSE GENERIC FUNCTION
+
+// let proyTabsLenght = proyTabs.length;
+
+// for(let i; i <= proyTabsLenght; i++){
+// // for(let {} of proyTabs){
+
+//     let proyTabs = document.getElementById('{proyTabs.htmlId[i]}');
+
+//     function proyTabs(){
+//         if(proyTabs.varName[i].style.display === "list-item"){
+//             proyTabs.varName[i].style.display = "none";
+//         } else {
+//             proyTabs.varName[i].style.display = "list-item";
+//         }
+//     }
+    
+// }
+
+// ====================== NAVIGATION ======================
 

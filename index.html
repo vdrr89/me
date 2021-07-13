@@ -5,15 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- My stylesheets -->
-    <link rel="stylesheet" href="css/style.css" type="text/css">
-    <link rel="stylesheet" href="css/fonts.css" type="text/css">
-    <link rel="stylesheet" href="css/responsive.css" type="text/css">
-
     <!-- Bootstrap 1:CSS 2:JS with Popper 3:Icons -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+
+    <!-- My stylesheets -->
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="css/fonts.css" type="text/css">
+    <link rel="stylesheet" href="css/responsive.css" type="text/css">
 
     <title>Veronica Romero</title>
 </head>
@@ -35,24 +35,15 @@
 
         <!-- dropdown list del menu proyectos -->
         <ul id="menu-projects-list" class="all-form sectionDisabled" aria-labelledby="navbarDropdown">
-            <li href="" class="btn-nav-out"><i class="bi bi-grid-1x2-fill"></i>  Diseño Web</li>
-            <li href="" class="btn-nav-out"><i class="bi bi-camera-fill"></i>  Fotografía</li>
-            <li href="" class="btn-nav-out"><i class="bi bi-bezier"></i>  Diseño Gráfico</li>
-            <li href="" class="btn-nav-out"><i class="bi bi-brush-fill"></i>  Ilustración</li>
+            <li onclick="proyTabs()" class="btn-nav-out"><i class="bi bi-grid-1x2-fill"></i>  Diseño Web</li>
+            <li onclick="proyTabs()" class="btn-nav-out"><i class="bi bi-camera-fill"></i>  Fotografía</li>
+            <li onclick="proyTabs()" class="btn-nav-out"><i class="bi bi-bezier"></i>  Diseño Gráfico</li>
+            <li onclick="proyTabs()" class="btn-nav-out"><i class="bi bi-brush-fill"></i>  Ilustración</li>
         </ul> 
-
-        <!-- mini menu proyectos desplegada en el lateral -->
-        <!-- ul: class="sectionDisabled" -->
-        <div id="side-menu-projects-list right-div" class="btn-nav-side">
-            <i class="bi bi-grid-1x2-fill"></i><br>
-            <i class="bi bi-camera-fill"></i><br>
-            <i class="bi bi-bezier"></i><br>
-            <i class="bi bi-brush-fill"></i><br>
-        </div> 
 
     </div>
 
-    <!-- ---------------------- PROYECTOS ---------------------- -->
+    <!-- ---------------------- HOME / PROYECTOS ---------------------- -->
     <div id="proyectos">
 
         <div class="proyectos-table">
@@ -64,7 +55,7 @@
 
     </div>
 
-    <!-- ---------------------- ABOUT ---------------------- -->
+    <!-- ---------------------- ABOUT: SHORT ---------------------- -->
     <div id="about">
 
         <a name="about"></a>
@@ -73,7 +64,7 @@
 
         <!-- breve explicación de quien soy -->
         <div class="card-content">
-            <p class="longText">
+            <p id="short-about" class="longText">
                 Hola! soy Verónica, vivo en Montevideo, Uruguay. <br>
                 Estudié <span style="color: LightGray; text-decoration:line-through">/ estudio / seguiré estudiando</span> sobre diseño de 
                 comunicación visual, desarrollo web, fotografía, y otras áreas relacionadas con la 
@@ -83,6 +74,52 @@
         </div>
 
         <hr class="dotted-line">
+
+    </div>
+
+    <!-- ---------------------- ABOUT: SKILLS ---------------------- -->
+
+    <div id="about-skills">
+
+        <div class="skills-block skills-text">
+            <p>HTML & CSS</p>
+            <p>JavaScript</p>
+            <p>Typescript</p>
+            <p>Angular</p>
+            <p>Git</p>
+        </div>
+
+        <div class="skills-block skills-bars">
+            <div class="progressbar"><div style="width: 90%"></div></div>
+            <div class="progressbar"><div style="width: 20%"></div></div>
+            <div class="progressbar"><div style="width: 20%"></div></div>
+            <div class="progressbar"><div style="width: 25%"></div></div>
+            <div class="progressbar"><div style="width: 35%"></div></div>
+        </div>
+
+        <div class="skills-block skills-text">
+            <p>Photoshop</p>
+            <p>Illustrator</p>
+            <p>Fotografía</p>
+            <p>Diseño Gráfico</p>
+            <p>Ilustración</p>
+        </div>
+
+        <div class="skills-block skills-bars">
+            <div class="progressbar"><div style="width: 90%"></div></div>
+            <div class="progressbar"><div style="width: 85%"></div></div>
+            <div class="progressbar"><div style="width: 90%"></div></div>
+            <div class="progressbar"><div style="width: 80%"></div></div>
+            <div class="progressbar"><div style="width: 70%"></div></div>
+        </div>
+
+    </div>
+
+    <hr class="dotted-line" style="margin-top:6vw;">
+
+    <!-- ---------------------- ABOUT: TIMELINE ---------------------- -->
+
+    <div id="about-timeline">
 
         <!-- semi detalle de mis estudios -->
         <div id="timeline">
@@ -140,14 +177,17 @@
                     <br>
                     <p class="small"><i class="bi bi-geo-alt-fill"></i> Online</p>
                     <p>Aquí dictan cursos sobre UX / UI (experiencia de usuario e interfaz de usuario), 
-                    Tomé los cursos de <b>User Interface Pattern design for Successful Software</b> dictado por 
-                    Priscilla Esser y <b>Human Computer Interaction</b> dictado por Alan Dix, y una breve introducción 
-                    a <b>Usability</b>. <br>
-                    Dentro de estos cursos hablaron sobre varios temas como: <br>
-                    percepción humana, diseño de interacción entre humanos y sistemas tecnológicos, 
-                    uso del color, percepción del espacio, señas visuales, como ayudar al usuario a encontrar 
-                    lo que está buscando (o lo que queremos que encuentre), prácticas habituales de 
-                    diseño para los patrones de interfaces, relación entre diseño del código y accesibilidad.</p>
+                        Tomé los cursos de <b>User Interface Pattern design for Successful Software</b> dictado por 
+                        Priscilla Esser y <b>Human Computer Interaction</b> dictado por Alan Dix, y una breve introducción 
+                        a <b>Usability</b>. 
+                    </p>
+                    <p class="small">
+                        Dentro de estos cursos hablaron sobre varios temas como: <br>
+                        percepción humana, diseño de interacción entre humanos y sistemas tecnológicos, 
+                        uso del color, percepción del espacio, señas visuales, como ayudar al usuario a encontrar 
+                        lo que está buscando (o lo que queremos que encuentre), prácticas habituales de 
+                        diseño para los patrones de interfaces, relación entre diseño del código y accesibilidad.
+                    </p>
                 </div>
             </div>
 
@@ -169,7 +209,7 @@
 
             <!-- Udemy -->
             <div class="card-content">
-                <h2 class="timeline-title">Web Development Bootcamp</h2>
+                <h2 class="timeline-title">Web Dev Bootcamp</h2>
                 <div class="border-container">
                     <a style="color: #2eaaff; font-weight: 400; font-size: 0.7rem; line-height: 0.9rem; text-decoration: none;" target="_blank" href="https://www.udemy.com/course/the-complete-web-development-bootcamp/">
                         Web Development Bootcamp by Angela Yu | Udemy
@@ -184,6 +224,7 @@
                 </div>
             </div>
         </div>
+
     </div>
 
     <!-- ---------------------- CONTACTO ---------------------- -->
@@ -227,7 +268,64 @@
             </ul>
         </footer> 
     </div>
-    
+
+    <!-- ====================== TABS / PROYECTOS ====================== -->
+    <div id="tabs-proyectos">
+
+        <!-- ---------------------- DISEÑO WEB ---------------------- -->
+        <div id="tabs-diseno-web">
+            <h2>Diseño Web</h2>
+        </div>
+
+        <!-- ---------------------- FOTOGRFIA ---------------------- -->
+        <div id="tabs-fotografia" class="sectionDisabled">
+            <h2>Fotografía</h2>
+
+            <!-- ---------------------- LANDSCAPE ---------------------- -->
+            <div id="tabs-fotografia-landscape" class="sectionDisabled">
+                <h2>Landscapes</h2>
+
+                <div class="vr-card">
+                    <img [src]="producto.imgUrl" class="cardImg" alt="foto de Landscapes">
+                </div>
+
+            </div>
+
+            <!-- ---------------------- OBJETOS ---------------------- -->
+            <div id="tabs-fotografia-objetos" class="sectionDisabled">
+                <h2>Objetos y Productos</h2>
+            </div>
+
+            <!-- ---------------------- TEXTURAS ---------------------- -->
+            <div id="tabs-fotografia-texturas" class="sectionDisabled">
+                <h2>Texturas</h2>
+            </div>
+
+            <!-- ---------------------- FOTO ILUSTRACION ---------------------- -->
+            <div id="tabs-fotografia-fotoilustracion" class="sectionDisabled">
+                <h2>Foto Ilustración</h2>
+            </div>
+
+            <!-- ---------------------- PHOTOSHOP ---------------------- -->
+            <div id="tabs-fotografia-photoshop" class="sectionDisabled">
+                <h2>Photoshop</h2>
+            </div>
+
+        </div>
+
+        <!-- ---------------------- DISEÑO GRAFICO ---------------------- -->
+        <div id="tabs-diseno-grafico" class="sectionDisabled">
+            
+        </div>
+
+        <!-- ---------------------- ILUSTRACION ---------------------- -->
+        <div id="tabs-ilustracion" class="sectionDisabled">
+            
+        </div>
+
+    </div>
+
+    <!-- ---------------------- SCRIPT ---------------------- -->
     <script src="main.js"></script>
 
 </body>

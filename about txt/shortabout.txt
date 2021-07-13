@@ -1,0 +1,5 @@
+Hola! soy Verónica, vivo en Montevideo, Uruguay. <br>
+Estudié <span style="color: LightGray; text-decoration:line-through">/ estudio / seguiré estudiando</span> sobre diseño de 
+comunicación visual, desarrollo web, fotografía, y otras áreas relacionadas con la 
+expresión visual. <br>
+Aquí debajo te dejo un poco más de información sobre mi...
