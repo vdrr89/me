@@ -98,24 +98,3 @@ var proyTabs = [
     }
 ]
 
-// PROYECT TABS OPEN/CLOSE GENERIC FUNCTION
-
-// let proyTabsLenght = proyTabs.length;
-
-// for(let i; i <= proyTabsLenght; i++){
-// // for(let {} of proyTabs){
-
-//     let proyTabs = document.getElementById('{proyTabs.htmlId[i]}');
-
-//     function proyTabs(){
-//         if(proyTabs.varName[i].style.display === "list-item"){
-//             proyTabs.varName[i].style.display = "none";
-//         } else {
-//             proyTabs.varName[i].style.display = "list-item";
-//         }
-//     }
-    
-// }
-
-// ====================== NAVIGATION ======================
-

@@ -1,0 +1,237 @@
+/* ---------------------- BUTTONS ---------------------- */
+
+/* BTN NAV */
+
+.btn-hamb {
+    display: none;
+}
+
+nav > button, 
+nav > div > button {
+    /* margin-bottom: auto; */
+    top: 0;
+}
+
+.btn-nav-out {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 800;
+  text-decoration: none;
+
+  margin: 4px auto;
+  padding: 16px 32px;
+  
+  cursor: pointer;
+  border-radius: 0px;
+
+  color: #1f1f1f;
+  border: none;
+  background-color: transparent;
+  /* box-shadow: 2px 2px 4px #000000; */
+
+  transition: all 0.3s ease 0s;
+  }
+  
+.btn-nav-out:hover {
+color: #fff;
+background-color: pink;
+border-color: transparent;
+box-shadow: 0px 15px 20px #1f1f1f9d;
+transform: translateY(7px);
+}
+
+.btn-nav-out:active {
+color: #1f1f1f;
+background-color: #d93b95;
+border-color: #1f1f1f;
+}
+
+.btn-nav-out > a {
+  color: #1f1f1f;
+}
+
+/* BTN OUT */
+.btn-out {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 800;
+  margin: 4px 2px;
+  padding: 16px 32px;
+  border-radius: 0px;
+  cursor: pointer;
+  color: #1f1f1f;
+  border-color: #1f1f1f;
+  background-color: #fff;
+  transition: all 0.3s ease 0s;
+}
+  
+.btn-out:hover, 
+.btn-out-micro:hover,
+.btn-out-micro-alone:hover {
+color: #fff;
+background-color: #1f1f1f;
+border-color: #1f1f1f;
+box-shadow: 0px 15px 20px #1f1f1fad;
+transform: translateY(7px);
+}
+
+.btn-out:focus, 
+.btn-out-micro:focus {
+box-shadow: 0 0 0 0.25rem #1f1f1f80;
+}
+
+.btn-out:active, 
+.btn-out-micro:active {
+color: #fff;
+background-color: #1f1f1f;
+border-color: #1f1f1f;
+}
+
+/* BTN GEEN & RED */
+.btn-green {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 800;
+  margin: 4px 2px;
+  padding: 16px 32px;
+  border-radius: 0px;
+  cursor: pointer;
+  color: #290;
+  border-color: #290;
+  background-color: #fff;
+  transition: all 0.3s ease 0s;
+}
+
+.btn-green:hover, 
+.btn-green-micro:hover,
+.btn-green-micro-alone:hover {
+color: #fff;
+background-color: #290;
+transform: translateY(7px);
+box-shadow: 0px 15px 20px #3c3f3e80
+}
+
+.btn-red {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 800;
+  margin: 4px 2px;
+  padding: 16px 32px;
+  border-radius: 0px;
+  cursor: pointer;
+  color: #901;
+  border-color: #901;
+  background-color: #fff;
+  transition: all 0.3s ease 0s;
+}
+
+.btn-red:hover, 
+.btn-red-micro:hover,
+.btn-red-micro-alone:hover {
+color: #fff;
+background-color: #9b0b0b;
+box-shadow: 0px 15px 20px #9b0b0b80;
+transform: translateY(7px);
+}
+
+
+/* BTN !MICRO */
+/* OUT GREEN RED GOLD */
+
+.btn-out-micro {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  margin: 2px 1px;
+  padding: 4px;
+  border-radius: 0px;
+  cursor: pointer;
+  color: #1f1f1f;
+  border-color: #1f1f1f;
+  background-color: #fff;
+  transition: all 0.3s ease 0s;
+}
+
+.btn-green-micro {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  margin: 2px 1px;
+  padding: 4px;
+  border-radius: 0px;
+  cursor: pointer;
+  color: #290;
+  border-color: #290;
+  background-color: #fff;
+  transition: all 0.3s ease 0s;
+}
+
+.btn-red-micro {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  margin: 2px 1px;
+  padding: 4px;
+  border-radius: 0px;
+  cursor: pointer;
+  color: #901;
+  border-color: #901;
+  background-color: #fff;
+  transition: all 0.3s ease 0s;
+}
+
+/* BTN MICRO !ALONE */
+/* OUT GREEN RED GOLD */
+  
+.btn-out-micro-alone {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  margin: 2px 1px;
+  padding: 4px;
+  border-radius: 0px;
+  cursor: pointer;
+  color: #1f1f1f;
+  border-color: transparent;
+  background-color: transparent;
+  transition: all 0.3s ease 0s;
+}
+
+.btn-green-micro-alone {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  margin: 2px 1px;
+  padding: 4px;
+  border-radius: 0px;
+  cursor: pointer;
+  color: #290;
+  border-color: transparent;
+  background-color: transparent;
+  transition: all 0.3s ease 0s;
+}
+
+.btn-red-micro-alone {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  margin: 2px 1px;
+  padding: 4px;
+  border-radius: 0px;
+  cursor: pointer;
+  color: #901;
+  border-color: transparent;
+  background-color: transparent;
+  transition: all 0.3s ease 0s;
+}
+
+  
+.btn-gold-micro-alone {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  margin: 2px 1px;
+  padding: 4px;
+  border-radius: 0px;
+  cursor: pointer;
+  color: #da1;
+  border-color: transparent;
+  background-color: transparent;
+  transition: all 0.3s ease 0s;
+}
+
+.btn-gold-micro-alone:hover {
+  color: #fff;
+  background-color: #da1;
+  box-shadow: 0px 15px 20px #5c4406;
+  transform: translateY(7px);
+}
