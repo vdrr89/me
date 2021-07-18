@@ -98,3 +98,22 @@ var proyTabs = [
     }
 ]
 
+// ====================== HOME ======================
+
+// ---------------------- ABOUT TIMELINE: OPEN CLOSE ----------------------
+
+var timelineBtn = document.getElementById('btn-short-timeline');
+var longTimeline = document.getElementById('timeline');
+var shortTimeline = document.getElementById('short-timeline');
+
+function openTimeline(){
+    if (longTimeline.style.display === "list-item") { 
+        shortTimeline.style.display = "";
+        longTimeline.style.display = "none"; 
+        console.log("openTimeline() if");
+    } else { 
+        longTimeline.style.display = "list-item"; 
+        shortTimeline.style.display = "none"; 
+        console.log("openTimeline() else");
+    }
+}

@@ -164,7 +164,7 @@ display: block;
   display: grid;
   grid-template-columns: repeat(4, 8vw);
   column-gap: 8vw;
-  row-gap: 8vw;
+  row-gap: 16vw;
 }
 
 .item-img-grid {
@@ -172,7 +172,7 @@ display: block;
 }
 
 .item-icon-grid {
-  font-size: 6vw;
+  font-size: 5vw;
 }
 
 /* progress circle */
@@ -198,8 +198,8 @@ display: block;
 
 .progress-title{
   position: absolute; /* this is important */
-  top: 12%;
-  left: 18%;
+  padding: 20%;
+  align-items: center;
 }
 
 /* bottom circle */
@@ -212,41 +212,91 @@ display: block;
 }
 
 .progress-90{
-  background-image: conic-gradient( black 324deg, white 330deg); 
+  background-image: conic-gradient(#05275e 162deg, #1c73ff 324deg, white 330deg); 
   /* 90% = (360/10) * 9 = 324 deg */
   /* change the degrees! witouth degrees is a smooth transition */
 }
 
 .progress-80 {
-  background-image: conic-gradient( black 288deg, white 295deg); 
+  background-image: conic-gradient(#05275e 144deg, #1c73ff 288deg, white 295deg); 
 /* 80% = (360/10) * 8 = 288 deg */
 }
 
 .progress-70 {
-  background-image: conic-gradient( black 252deg, white 260deg); 
+  background-image: conic-gradient(#05275e 126deg, #1c73ff 252deg, white 260deg); 
 /* 70% = (360/10) * 7 = 252 deg */
 }
 
 .progress-40 {
-  background-image: conic-gradient( black 144deg, white 150deg); 
+  background-image: conic-gradient(#05275e 72deg, #1c73ff 144deg, white 150deg); 
 /*  30% = (360/10) * 4 = 144 deg */
 }
 
 .progress-30 {
-  background-image: conic-gradient( black 108deg, white 115deg); 
+  background-image: conic-gradient(#05275e 54deg, #1c73ff 108deg, white 115deg); 
 /*  30% = (360/10) * 3 = 108 deg */
 }
 
 .progress-20 {
-  background-image: conic-gradient( black 72deg, white 80deg); 
+  background-image: conic-gradient(#05275e 36deg, #1c73ff 72deg, white 80deg); 
 /* 20% = (360/10) * 2 = 72 deg */
 }
 /* ---------------------- ABOUT TIMELINE ---------------------- */
 
 #timeline > .card-content{
-  margin: 15% 15%;
+  margin: 5% 15%;
   border-radius: 0px;
   padding-left: 20px;
+}
+
+.section-title{
+  margin: 10% auto 5% auto;
+  display: table;
+}
+
+/* short timeline */
+.short-timeline{
+  display: relative;
+}
+
+#short-timeline > ul{
+  margin: 0 15%;
+}
+
+.short-timeline-item{
+  list-style:disc;
+  margin: 1vw;
+}
+
+.short-timeline-item::marker{
+  font-size: 3vw;
+  color: #d93b95;
+}
+
+/* btn open close section */
+.btn-short-timeline {
+	box-shadow: 2px 8px 10px lightgray;
+	background-color:#fff;
+  text-shadow:1px 1px 3px gray;
+	border-radius:50%;
+  cursor:pointer;
+	display:inline-block;
+	padding:24px 31px;
+  margin: 0 40%;
+  border: none;
+}
+.btn-short-timeline:hover {
+	background-color:lightgray;
+}
+.btn-short-timeline:active {
+	position:relative;
+	top:1px;
+}
+
+/* timeline */
+
+.timeline{
+  display: none;
 }
 
 .border-container {
