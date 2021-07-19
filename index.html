@@ -30,10 +30,10 @@
         <nav>
             <button onclick="openHamb()" id="hamburger-menu-icon" class="btn-nav-out btn-hamb"><i class="bi bi-list"></i></button>
             <div id="menu-list">
-                <button onclick="smoothScroll(document.getElementById('proyectos'))" class="btn-nav-out">Home</button>
+                <button onclick="smoothScroll(document.getElementById('proyectos'))" class="btn-nav-out"><i class="bi bi-house-door-fill"></i></button>
                 <button onclick="openDropdown()" id="menu-projects-button" class="btn-nav-out" >Projects</button>
                 <button onclick="smoothScroll(document.getElementById('about'))" class="btn-nav-out">About</button>
-                <button onclick="smoothScroll(document.getElementById('contacto'))" class="btn-nav-out">Contact</button>                
+                <!-- <button onclick="smoothScroll(document.getElementById('contacto'))" class="btn-nav-out">Contact</button>                 -->
             </div>
         </nav>
 
@@ -271,24 +271,23 @@
             
         </div>
 
-        <!-- semi detalle de mis estudios -->
         <div id="timeline" class="timeline">
             <!-- LDCV -->
             <div class="card-content">
                 <h2 class="timeline-title">LDCV</h2>
                 <div class="border-container">
-                    <a style="color: #2eaaff; font-weight: 400; font-size: 0.7rem; line-height: 0.9rem; text-decoration: none;" target="_blank" href="http://www.fadu.edu.uy/ldcv/">
+                    <a class="timeline-instit timeline-micro-element" target="_blank" href="http://www.fadu.edu.uy/ldcv/">
                         Licenciatura en Diseño de Comunicación Visual | Udelar
                     </a>
                     <br>
-                    <p class="small"><i class="bi bi-geo-alt-fill"></i>Montevideo, Uruguay</p>
-                    <p>  
+                    <p class="small timeline-micro-element"><i class="bi bi-geo-alt-fill"></i>Montevideo, Uruguay</p>
+                    <p class="timeline-micro-element">  
                         Aquí cursé 3 años <span style="color: LightGray; text-decoration:line-through">(son 4)</span>, 
                         aprendí varias cosas sobre (justamente) Comunicación Visual, 
                         por ejemplo creación de piezas (y sistemas de piezas) gráficas 2D de forma digital e impresa
                         (<b>afiches, editorial, diseño de sitios web, redes sociales, fotografía, tipografía e iconografía</b>) 
                     </p>
-                    <p class="small">
+                    <p class="small timeline-micro-element">
                         Aquí dejo más detalles: <br>
                         Sistemas de comunicación por medio de: Composición, iluminación, uso del color, tipografías, 
                         significado de elementos visuales y las palabras y la relación entre éstas en sus diversos 
@@ -306,12 +305,12 @@
             <div class="card-content">
                 <h2 class="timeline-title">GA</h2>
                 <div class="border-container">
-                    <a style="color: #2eaaff; font-weight: 400; font-size: 0.7rem; line-height: 0.9rem; text-decoration: none;" target="_blank" href="https://generalassemb.ly/">
+                    <a class="timeline-instit timeline-micro-element" target="_blank" href="https://generalassemb.ly/">
                         General Assembly
                     </a>
                     <br>
-                    <p class="small"><i class="bi bi-geo-alt-fill"></i> Online</p>
-                    <p>Es un curso online de 2 meses, donde enseñan una introducción a <b>HTML5 y CSS3</b> 
+                    <p class="small timeline-micro-element"><i class="bi bi-geo-alt-fill"></i> Online</p>
+                    <p class="timeline-micro-element">Es un curso online de 2 meses, donde enseñan una introducción a <b>HTML5 y CSS3</b> 
                         por medio de ejercicios prácticos.</p> 
                 </div>
 
@@ -321,17 +320,17 @@
             <div class="card-content">
                 <h2 class="timeline-title">IDF</h2>
                 <div class="border-container">
-                    <a style="color: #2eaaff; font-weight: 400; font-size: 0.7rem; line-height: 0.9rem; text-decoration: none;" target="_blank" href="https://www.interaction-design.org/">
+                    <a class="timeline-instit timeline-micro-element" target="_blank" href="https://www.interaction-design.org/">
                         Interaction Design Foundation  
                     </a>
                     <br>
-                    <p class="small"><i class="bi bi-geo-alt-fill"></i> Online</p>
+                    <p class="small timeline-micro-element"><i class="bi bi-geo-alt-fill"></i> Online</p>
                     <p>Aquí dictan cursos sobre UX / UI (experiencia de usuario e interfaz de usuario), 
                         Tomé los cursos de <b>User Interface Pattern design for Successful Software</b> dictado por 
                         Priscilla Esser y <b>Human Computer Interaction</b> dictado por Alan Dix, y una breve introducción 
                         a <b>Usability</b>. 
                     </p>
-                    <p class="small">
+                    <p class="small timeline-micro-element">
                         Dentro de estos cursos hablaron sobre varios temas como: <br>
                         percepción humana, diseño de interacción entre humanos y sistemas tecnológicos, 
                         uso del color, percepción del espacio, señas visuales, como ayudar al usuario a encontrar 
@@ -345,11 +344,11 @@
             <div class="card-content">
                 <h2 class="timeline-title">El Taller</h2>
                 <div class="border-container">
-                    <a style="color: #2eaaff; font-weight: 400; font-size: 0.7rem; line-height: 0.9rem; text-decoration: none;" href="https://www.tallerdeinformatica.edu.uy/">
+                    <a class="timeline-instit timeline-micro-element" target="_blank" href="https://www.tallerdeinformatica.edu.uy/">
                         El Taller de Informática    
                     </a>
                     <br>
-                    <p class="small"><i class="bi bi-geo-alt-fill"></i> Online</p>
+                    <p class="small timeline-micro-element"><i class="bi bi-geo-alt-fill"></i> Online</p>
                     <p>Este es un curso de 3 meses donde enseñaron <b>Git</b>, una introducción a <b>HTML, CSS, 
                         Bootstrap, JavaScript, Typescript, Angular</b>
                     </p>                    
@@ -361,12 +360,12 @@
             <div class="card-content">
                 <h2 class="timeline-title">Web Dev Bootcamp</h2>
                 <div class="border-container">
-                    <a style="color: #2eaaff; font-weight: 400; font-size: 0.7rem; line-height: 0.9rem; text-decoration: none;" target="_blank" href="https://www.udemy.com/course/the-complete-web-development-bootcamp/">
+                    <a class="timeline-instit timeline-micro-element" target="_blank" href="https://www.udemy.com/course/the-complete-web-development-bootcamp/">
                         Web Development Bootcamp by Angela Yu | Udemy
                     </a>
                     <br>
-                    <p class="small"><i class="bi bi-geo-alt-fill"></i> Online</p>
-                    <p><span style="color: LightGray; text-decoration:line-through">(Lo estoy cursando actualmente)</span></p>
+                    <p class="small timeline-micro-element"><i class="bi bi-geo-alt-fill"></i> Online</p>
+                    <p class="timeline-micro-element"><span style="color: LightGray; text-decoration:line-through">(Lo estoy cursando actualmente)</span></p>
                     <p>Este es un curso sobre Desarrollo Web, que tiene un contenido amplio, 
                         por ejemplo toca temas como <b>HTML, CSS, Bootstrap, Web Design, Javascript ES6, 
                         DOM, jQuery, Node.js, Git, SQL, MongoDB, Mongoose, API, React.js</b>.
@@ -383,33 +382,33 @@
     </div>
 
     <!-- ---------------------- CONTACTO ---------------------- -->
-    <div id="contacto">
+     <!-- <div id="contacto">
 
         <a name="contacto"></a>
 
-        <form class="all-form contacto-form" action="https://mailthis.to/" method="POST" encType="multipart/form-data">
+        <form class="all-form contacto-form" action="mailto:vdrr89@gmail.com" method="POST" encType="multipart/form-data">
             <div class="form-floating mb-3">
-                <input formControlName="Name" type="email" class="form-control" id="floatingInput" placeholder="Write your name here">
+                <input formControlName="Name" type="text" class="form-control" id="floatingInput" placeholder="Write your name here">
                 <label for="floatingInput">Name</label>
             </div>
             <div class="form-floating">
-                <input formControlName="Email" type="password" class="form-control" id="floatingPassword" placeholder="Write your email here">
-                <label for="floatingPassword">E-mail</label>
+                <input formControlName="Email" type="email" class="form-control" id="floatingInput" placeholder="Write your email here">
+                <label for="floatingInput">E-mail</label>
             </div>
             <br>
             <div class="form-floating">
                 <textarea formControlName="Message" class="form-control" placeholder="Write your message here" row="5" id="floatingTextarea"></textarea>
                 <label for="floatingTextarea">Message</label>
-            </div>
-            <input type="hidden" name="_subject" value="Contact form submitted">
+            </div> 
+             <input type="hidden" name="_subject" value="Contact form submitted">
             <input type="hidden" name="_after" value="https://myhomepage.net/">
             <input type="hidden" name="_honeypot" value="">
-            <input type="hidden" name="_confirmation" value="">
+            <input type="hidden" name="_confirmation" value=""> 
             <br>
             <button class="btn-red">Cancel</button>
-            <button class="btn-green right-div">Send</button>
+            <button class="btn-green right-div"  type="submit" value="enviar">Send</button>
         </form>
-    </div>
+    </div> -->
 
     <!-- ---------------------- FOOTER ---------------------- -->
     <div id="footer">

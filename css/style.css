@@ -111,7 +111,7 @@ label {
 /* submenu dropdown projects */
 #navbar > .all-form {
   max-width: 250px;
-  left: 29%;
+  left: 35%;
   top: 11%;
   position: fixed;
   background-color: #fff;
@@ -243,15 +243,9 @@ display: block;
 }
 /* ---------------------- ABOUT TIMELINE ---------------------- */
 
-#timeline > .card-content{
-  margin: 5% 15%;
-  border-radius: 0px;
-  padding-left: 20px;
-}
-
-.section-title{
-  margin: 10% auto 5% auto;
-  display: table;
+#short-timeline,
+#timeline {
+  padding-bottom: 40px; /* este es xq queda debajo del footer */
 }
 
 /* short timeline */
@@ -295,6 +289,17 @@ display: block;
 
 /* timeline */
 
+#timeline > .card-content{
+  margin: 5% 15%;
+  border-radius: 0px;
+  padding-left: 20px;
+}
+
+.section-title{
+  margin: 10% auto 5% auto;
+  display: table;
+}
+
 .timeline{
   display: none;
 }
@@ -323,6 +328,18 @@ color: #d93b95;
   border-radius: 50%;
   background: #d93b95;
   border: transparent;
+}
+
+.timeline-micro-element {
+  margin: 3% auto;
+}
+
+.timeline-instit > a {
+  color: #2eaaff; 
+  font-weight: 400; 
+  font-size: 1rem; 
+  line-height: 0.9rem; 
+  text-decoration: underline;
 }
 
 /* ---------------------- PROYECTOS: HOME GRID ---------------------- */
@@ -416,7 +433,7 @@ color: #d93b95;
 /* ---------------------- CONTACTO ---------------------- */
 
 #contacto{
-  padding: 40px;
+  padding: 40px; /* este era xq quedaba debajo del footer */
 }
 
 .contacto-form{

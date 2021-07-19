@@ -18,10 +18,33 @@ function openHamb(){
 function openDropdown(){
     if(menuProjectsList.style.display === "block"){
         menuProjectsList.style.display = "none";
+        console.log("openDropdown if")
     } else {
         menuProjectsList.style.display = "block";
+        console.log('openDropdown else');
     }
 }
+
+// HACE CLICK EN PANTALLA Y DROPDOWN CIERRA
+
+// las 2 siguientes funciones tienen el mismo problema, se aplican al hacer click incluso en el botón de despleagar dropdown
+
+// window.onclick = function(e){
+//     e.preventDefault();
+//     if(menuProjectsList.style.display === "block"){
+//         menuProjectsList.style.display = "none";
+//         console.log("windows.onclick");
+//     }
+// };
+
+// window.addEventListener("click", function(e){
+//     e.preventDefault();
+//     if(menuProjectsList.style.display === "block"){
+//         menuProjectsList.style.display = "none";
+//         console.log("windows.onclick");
+//     }
+// }) 
+
 
 // ---------------------- NAVBAR LINKS SCROLL TO DIV ----------------------
 
