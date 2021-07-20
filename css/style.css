@@ -109,11 +109,19 @@ label {
   margin: 2% auto;
 }
 
+.dotted-margin-top{
+  margin-top:5%;
+}
+
 /* elemento alineado a la derecha */
 .right-div {
   margin-right: 1%;
   float: right;
   margin: 4px 2px
+}
+
+.background-border-img {
+  width: 100%;
 }
 
 /* ---------------------- NAV ---------------------- */
@@ -171,6 +179,7 @@ display: block;
 
 #about-skills {
   background-color: #4169E1; /*royalblue*/
+  display: flow-root;
 }
 
 .grid-container {
@@ -439,6 +448,7 @@ color: #d93b95;
 #proyectos {
   height: 60vh;
   background-color: hotpink;
+  display: flow-root;
 }
 
 .proyectos-title{

@@ -84,53 +84,20 @@
         background-color: #eaeaea;
     }
 
-    /* ---------------------- PROYECTOS ---------------------- */
-
-    #proyectos {
-        margin-top: 20%;
-        height: 20vh;
-    }
-
-    .proyectos-table{
-      display: grid;
-      grid-template-columns: repeat(4, 13vw);
-      column-gap: 9vw;
-      margin: 10%;
-    }
-
-    .proyectos-i {
-      position: relative;
-      font-size: 13vw;
-    }
-  
     /* ---------------------- ABOUT ---------------------- */
   
     .section-title{
-      margin: 10%;
+      margin: 20% auto 5% auto;
     }
 
-    /* TIMELINE SHORT */
-    #short-timeline > ul {
-      margin: 0;
+    .shortAbout{
+      margin: 0 10%;
     }
 
-    .short-timeline-item {
-      margin: 3vw 0;
-    }
+    /* ---------------------- SKILLS ---------------------- */
 
-    .btn-short-timeline {
-      padding: 24px 50px;
-      margin: 0 30%;
-    }
-
-    .longText {
-      padding: 10%;
-    }
-
-    /* ABOUT SKILLS */
-
-    #about-skills {
-      height: 120vw;
+    #about-skills{
+      height: 160vw; 
     }
 
     .grid-container {
@@ -157,6 +124,26 @@
       font-size: 12vw;
     } 
 
+    /* ---------------------- TIMELINE ---------------------- */
+
+    /* TIMELINE SHORT */
+    #short-timeline > ul {
+      margin: 0;
+    }
+
+    .short-timeline-item {
+      margin: 3vw 0;
+    }
+
+    .btn-short-timeline {
+      padding: 24px 50px;
+      margin: 0 30%;
+    }
+
+    .longText {
+      padding: 10%;
+    }
+
     /* TIMELINE CARDS */
 
     .timeline-title{
@@ -178,6 +165,24 @@
     .timeline-instit > a {
       font-size: 0.9rem;
     }
+
+      /* ---------------------- PROYECTOS ---------------------- */
+
+      #proyectos {
+        height: 30vh;
+    }
+
+    .proyectos-table{
+      display: grid;
+      grid-template-columns: repeat(4, 13vw);
+      column-gap: 9vw;
+      margin: 10%;
+    }
+
+    .proyectos-i {
+      position: relative;
+      font-size: 13vw;
+    }
   
     /* ---------------------- CONTACT ---------------------- */
     .contacto-form {
@@ -186,6 +191,10 @@
   
     /* ---------------------- FOOTER ---------------------- */
     
+    #footer{
+      display: grid;
+    }
+
     #footer > ul {
         padding-left: 0;
     }
