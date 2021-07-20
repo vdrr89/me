@@ -185,12 +185,17 @@
   }
   
     /* ---------------------- FOOTER ---------------------- */
-    #footer{
-      position: fixed;
-    }
     
     #footer > ul {
         padding-left: 0;
+    }
+
+    .footer-title{
+      margin: 10px;
+    }
+
+    .footer-icon{
+      font-size: 1.5rem;
     }
 
     /* ---------------------- BUTTONS ---------------------- */

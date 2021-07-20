@@ -91,12 +91,22 @@ label {
 }
 
 /* usada en about */
-.dotted-line{
-  border-top: 10px dotted #d93b95;
-  background: #fff;
+.dotted-line-pink, 
+.dotted-line-blue {
+  border-top: 10px dotted white;
   width: 70%;
   margin: 0 auto;
   z-index: 2;
+}
+
+.dotted-line-pink{
+  background-color: hotpink;
+  margin: 2% auto 1% auto;
+}
+
+.dotted-line-blue{
+  background-color: #4169E1;
+  margin: 2% auto;
 }
 
 /* elemento alineado a la derecha */
@@ -151,13 +161,17 @@ display: block;
 /* ---------------------- ABOUT SHORT ---------------------- */
 
 /* about */
-.longText{
-    max-width: 800px;
-    margin: 0 auto;
-    text-align: center;
+.shortAbout{
+    max-width: 600px;
+    margin: 0 auto 10% auto;
 }
 
+
 /* ---------------------- ABOUT SKILLS ---------------------- */
+
+#about-skills {
+  background-color: #4169E1; /*royalblue*/
+}
 
 .grid-container {
   margin: 10% 20%;
@@ -167,12 +181,25 @@ display: block;
   row-gap: 16vw;
 }
 
-.item-img-grid {
-  width: 100%;
-}
-
 .item-icon-grid {
   font-size: 5vw;
+  color: white;
+}
+
+.item-img-grid {
+  width: 100%;
+  color: white;
+}
+
+/* para cambiar color en svg */
+.skills-path {
+  fill: white;
+} 
+
+/* para invertir color en img */
+.invertir-color {
+  -webkit-filter: invert(100%);
+ filter: invert(100%);
 }
 
 /* progress circle */
@@ -185,7 +212,7 @@ display: block;
 /* contains title */
 .progress-title-container{
   position: absolute; /* this is important */ 
-  background-color: #fff;
+  background-color: #4169E1; /*royalblue*/
   z-index: 2;
   top: 0.3vw;
   left: 0.3vw;
@@ -212,33 +239,33 @@ display: block;
 }
 
 .progress-90{
-  background-image: conic-gradient(#05275e 162deg, #1c73ff 324deg, white 330deg); 
+  background-image: conic-gradient(white 324deg, #4169E1 330deg); /*royalblue*/
   /* 90% = (360/10) * 9 = 324 deg */
   /* change the degrees! witouth degrees is a smooth transition */
 }
 
 .progress-80 {
-  background-image: conic-gradient(#05275e 144deg, #1c73ff 288deg, white 295deg); 
+  background-image: conic-gradient(white 288deg, #4169E1 300deg); /*royalblue*/  
 /* 80% = (360/10) * 8 = 288 deg */
 }
 
 .progress-70 {
-  background-image: conic-gradient(#05275e 126deg, #1c73ff 252deg, white 260deg); 
+  background-image: conic-gradient(white 252deg, #4169E1 260deg); /*royalblue*/ 
 /* 70% = (360/10) * 7 = 252 deg */
 }
 
 .progress-40 {
-  background-image: conic-gradient(#05275e 72deg, #1c73ff 144deg, white 150deg); 
+  background-image: conic-gradient(white 144deg, #4169E1 150deg); /*royalblue*/
 /*  30% = (360/10) * 4 = 144 deg */
 }
 
 .progress-30 {
-  background-image: conic-gradient(#05275e 54deg, #1c73ff 108deg, white 115deg); 
+  background-image: conic-gradient(white 108deg, #4169E1 115deg); /*royalblue*/ 
 /*  30% = (360/10) * 3 = 108 deg */
 }
 
 .progress-20 {
-  background-image: conic-gradient(#05275e 36deg, #1c73ff 72deg, white 80deg); 
+  background-image: conic-gradient(white 72deg, #4169E1 80deg); /*royalblue*/
 /* 20% = (360/10) * 2 = 72 deg */
 }
 /* ---------------------- ABOUT TIMELINE ---------------------- */
@@ -344,30 +371,7 @@ color: #d93b95;
 
 /* ---------------------- PROYECTOS: HOME GRID ---------------------- */
 
-#proyectos{
-  height: 30vh;
-}
 
-/* grid icon link para proyectos */
-.proyectos-table {
-  margin-top: 10%;
-  text-align: center;
-}
-
-.proyetos-table-td{
-    padding: 2vw;
-    cursor: pointer;
-}
-
-.proyectos-i {
-    font-size: 8vw;
-    transition: all 0.3s ease 0s;
-}
-
-.proyectos-i:hover {
-    color: #d93b95;
-    transform: translateY(7px);
-}
 
 /* ---------------------- PROYECTOS: CARDS ---------------------- */
 
@@ -430,6 +434,39 @@ color: #d93b95;
   text-align: center;
 }
 
+/* ---------------------- HOME PROYECTOS ---------------------- */
+
+#proyectos {
+  height: 60vh;
+  background-color: hotpink;
+}
+
+.proyectos-title{
+  margin: 5% auto 0 auto;
+  display: table;
+}
+
+/* grid icon link para proyectos */
+.proyectos-table {
+  margin-top: 5%;
+  text-align: center;
+}
+
+.proyetos-table-td{
+    padding: 2vw;
+    cursor: pointer;
+}
+
+.proyectos-i {
+    font-size: 8vw;
+    transition: all 0.3s ease 0s;
+}
+
+.proyectos-i:hover {
+    color: #fff;
+    transform: translateY(7px);
+}
+
 /* ---------------------- CONTACTO ---------------------- */
 
 #contacto{
@@ -446,31 +483,108 @@ color: #d93b95;
 
 /* ---------------------- FOOTER ---------------------- */
 
-footer {
-  position: fixed;
+#footer{
+  background-color: hotpink;
+}
+
+.footer {
+  height: 25vh;
+  position: relative;
   position: -webkit-sticky; /* Safari */
-  background-color: #1f1f1f;
-  box-shadow: 2px 2px 4px #1f1f1f9f;
   bottom: 0px;
   width: 100%;
   text-align: center;
-  z-index: 100;
 }
 
-footer > ul {
-  display: inline;
+.footer-title{
+  text-shadow: 2px 2px 4px #ffffff;
+}
+
+.footer-ul {
+  display: inline-flex;
   padding-left: 0;
 }
 
-footer > ul > li {
+.footer-ul > li {
   display: inline-block;
 }
 
 .footer-icon {
     color: #fff;
     margin: 0 10px;
+    font-size: 2.5rem;
 }
 
 .footer-icon:hover{
     color: #d93b95;
+}
+
+
+/* FOOTER WAVES */
+
+.flex-waves-content { /*Flexbox for containers*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.content-waves {
+  display: block;
+  position:relative;
+  height:30vh;
+  text-align:center;
+  background-color: black;
+}
+
+.waves {
+  position:relative;
+  width: 100%;
+  height:15vh;
+  margin-bottom:-7px; /*Fix for safari gap*/
+  min-height:100px;
+  max-height:150px;
+}
+
+/* Animation */
+
+.parallax > use {
+  animation: move-forever 25s cubic-bezier(.55,.5,.45,.5)     infinite;
+}
+.parallax > use:nth-child(1) {
+  animation-delay: -2s;
+  animation-duration: 7s;
+}
+.parallax > use:nth-child(2) {
+  animation-delay: -3s;
+  animation-duration: 10s;
+}
+.parallax > use:nth-child(3) {
+  animation-delay: -4s;
+  animation-duration: 13s;
+}
+.parallax > use:nth-child(4) {
+  animation-delay: -5s;
+  animation-duration: 20s;
+}
+@keyframes move-forever {
+  0% {
+   transform: translate3d(-90px,0,0);
+  }
+  100% { 
+    transform: translate3d(85px,0,0);
+  }
+}
+/*Shrinking for mobile*/
+@media (max-width: 768px) {
+  .waves {
+    height:40px;
+    min-height:40px;
+  }
+  .content {
+    height:30vh;
+  }
+  h1 {
+    font-size:24px;
+  }
 }
