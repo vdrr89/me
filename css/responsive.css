@@ -1,230 +1,207 @@
 /* ====================== SMALL DEVICES ====================== */
 
 @media only screen and (max-width: 900px) {
-    body{
-      width: 100%;
-      height: 100%;
-    }
+  body{
+    width: 100%;
+    height: 100%;
+  }
 
-    h1, h2, h3, h4 {
-      font-size: 2.5rem;
-    }
+  h1, h2, h3, h4 {
+    font-size: 2.5rem;
+  }
     
-    /* ---------------------- GRID PROYECTOS ---------------------- */
+  /* ---------------------- GRID PROYECTOS ---------------------- */
 
-    /* posts en grid */
-    .vr-card-group {
-        grid-template-columns: auto auto;
-    }
-  
-    /* ---------------------- NAVIGATION ---------------------- */
-    nav {
-      display: flex;
-      position: fixed;
-      background-color: #fff;
-    }
-  
-    #navbar > .all-form {
-        max-width: 250px;
-        top: 7.7%;
-        left: 10%;
-        position: fixed;
-        background-color: #fff;
-        z-index: 20;
-      }
+  /* posts en grid */
+  .vr-card-group {
+    grid-template-columns: auto auto;
+  }
 
-    #hamburger-menu-icon{
-        /* display: flex; */
-        display: none;
-        margin-top: 0;
-    }
-  
-    .btn-nav-out:active{
-      background-color: transparent;
-      box-shadow: transparent;
-      color: #d93b95;
-      transition: none;
-      box-shadow: none;
-      top: 0;
-    }
+  /* ---------------------- NAVIGATION ---------------------- */
+  .nav {
+    display: flex;
+    position: fixed;
+    background-color: #fff;
+  }
 
-    .btn-nav-out:hover{
-      background-color: transparent;
-      box-shadow: transparent;
-      color: gray;
-      box-shadow: none;
-      transition: none;
-      top: 0;
-    }
-  
-    .btn-nav-out{
-      padding: 3vw;
-      margin: 0;
-      transition: none;
-      top: 0;
-    }
-  
-    /* todo el div donde se encuentra todo el menu */
-    #menu-list {
-      display: flex;
-    }
+  #navbar > .all-form {
+    max-width: 250px;
+    top: 7.7%;
+    left: 10%;
+    position: fixed;
+    background-color: #fff;
+    z-index: 20;
+  }
 
-    #menu-list > div {
-      display: flex;
-    }
-  
-    /* el div que contiene el dropdown de proyectos */
-    #menu-projects-list > li{
-      display: block;
-      color: gray;
-      text-align: center;
-    }
+  #hamburger-menu-icon{
+    display: none;
+    margin-top: 0;
+  }
 
-    #menu-projects-list {
-        background-color: #eaeaea;
-    }
+  .btn-nav-out{
+    padding: 3vw;
+    margin: 0;
+    transition: none;
+    top: 0;
+  }
 
-    /* ---------------------- ABOUT ---------------------- */
-  
-    .section-title{
-      margin: 20% auto 5% auto;
-    }
+  .btn-nav-out:active, 
+  .btn-nav-out:hover {
+    background-color: transparent;
+    box-shadow: transparent;
+    transition: none;
+    box-shadow: none;
+    top: 0;
+  }
 
-    .shortAbout{
-      margin: 0 10%;
-    }
+  .btn-nav-out:active{
+    color: #d93b95;
+  }
 
-    /* ---------------------- SKILLS ---------------------- */
+  .btn-nav-out:hover{
+    color: gray;
+  }
+      
+  /* el div que contiene el dropdown de proyectos */
+  #menu-projects-list > .btn-nav-out {
+    display: block;
+    color: gray;
+    text-align: center;
+  }
 
-    #about-skills{
-      height: 160vw; 
-    }
+  #menu-projects-list {
+    background-color: #eaeaea;
+  }
 
-    .grid-container {
-      margin: 10% 10%;
-      display: grid;
-      grid-template-columns: repeat(3, 20vw);
-      column-gap: 10vw;
-      row-gap: 30vw;
-    }
+  /* ---------------------- ABOUT: SHORT ---------------------- */
 
-    .progress-title-container{
-      height: 18vw;
-      width: 18vw;
-      top: 0.8vw;
-      left: 0.8vw;  
-    }
+  .section-title{
+    margin: 20% auto 5% auto;
+  }
 
-    .progress-bottom-circle {
-      height: 20vw;
-      width: 20vw;
-    }
+  .short-about{
+    margin: 0 10% 3%;
+  }
 
-    .item-icon-grid {
-      font-size: 12vw;
-    } 
+  /* ---------------------- ABOUT: SKILLS ---------------------- */
 
-    /* ---------------------- TIMELINE ---------------------- */
+  #about-skills{
+    height: 160vw; 
+  }
 
-    /* TIMELINE SHORT */
-    #short-timeline > ul {
-      margin: 0;
-    }
+  .grid-container {
+    margin: 10% 10%;
+    display: grid;
+    grid-template-columns: repeat(3, 20vw);
+    column-gap: 10vw;
+    row-gap: 30vw;
+  }
 
-    .short-timeline-item {
-      margin: 3vw 0;
-    }
+  .progress-title-container{
+    height: 18vw;
+    width: 18vw;
+    top: 0.8vw;
+    left: 0.8vw;  
+  }
 
-    .btn-short-timeline {
-      padding: 24px 50px;
-      margin: 0 30%;
-    }
+  .progress-bottom-circle {
+    height: 20vw;
+    width: 20vw;
+  }
 
-    .longText {
-      padding: 10%;
-    }
+  .item-icon-grid {
+    font-size: 12vw;
+  } 
 
-    /* TIMELINE CARDS */
+  /* ---------------------- TIMELINE ---------------------- */
 
-    .timeline-title{
-      margin-left: 16%;
-    }
+  /* TIMELINE SHORT */
+  #short-timeline > ul {
+    margin: 0;
+  }
 
-    .timeline-title::marker{
-      font-size: 200%;
-    }
-  
-    #timeline > .card-content {
-      margin: 15% 10% 15% 0;
-    }
+  .short-timeline-item {
+    margin: 3vw 0;
+  }
 
-    .timeline-micro-element {
-      margin: 5% auto;
-    }
+  .btn-short-timeline {
+    padding: 24px 50px;
+    margin: 0 30%;
+  }
 
-    .timeline-instit > a {
-      font-size: 0.9rem;
-    }
+  /* TIMELINE CARDS */
 
-      /* ---------------------- PROYECTOS ---------------------- */
+  .timeline-title{
+    margin-left: 16%;
+  }
 
-      #proyectos {
-        height: 30vh;
-    }
-
-    .proyectos-table{
-      display: grid;
-      grid-template-columns: repeat(4, 13vw);
-      column-gap: 9vw;
-      margin: 10%;
-    }
-
-    .proyectos-i {
-      position: relative;
-      font-size: 13vw;
-    }
-  
-    /* ---------------------- CONTACT ---------------------- */
-    .contacto-form {
-      margin: 5%;
+  .timeline-title::marker{
+    font-size: 200%;
   }
   
-    /* ---------------------- FOOTER ---------------------- */
-    
-    #footer{
-      display: grid;
-    }
+  .card-content {
+    margin: 5%;
+  }
 
-    #footer > ul {
-        padding-left: 0;
-    }
+  .timeline-micro-element {
+    margin: 5% auto;
+  }
 
-    .footer-title{
-      margin: 10px;
-    }
+  .timeline-instit > a {
+    font-size: 0.9rem;
+  }
 
-    .footer-icon{
-      font-size: 1.5rem;
-    }
+  /* ---------------------- PROYECTOS ---------------------- */
 
-    /* ---------------------- BUTTONS ---------------------- */
-  
-    .btn-red, 
-    .btn-green{
-      padding: 8px 16px;
-    }
-  
+  #proyectos {
+    height: 30vh;
+  }
+
+  .proyectos-table{
+    display: inline-flex;
+    grid-template-columns: repeat(4, 13vw);
+    column-gap: 2vw;
+    margin: 8%;
+  }
+
+  .proyectos-i {
+    position: relative;
+    font-size: 13vw;
   }
   
+  /* ---------------------- FOOTER ---------------------- */
   
-  @media only screen and (max-width: 600px){
-      /* posts en grid */
-      .vr-card-group {
-          grid-template-columns: auto;
-      }
-  
-      nav {
-          float: none;
-      }
+  #footer{
+    display: grid;
   }
+
+  #footer > ul {
+      padding-left: 0;
+  }
+
+  .footer-title{
+    margin: 10px;
+  }
+
+  .footer-icon{
+    font-size: 1.5rem;
+  }
+
+  .content-waves{
+    height: 25vh;
+  }
+
+}
+  
+  
+@media only screen and (max-width: 600px){
+  /* posts en grid */
+  .vr-card-group {
+    grid-template-columns: auto;
+  }
+
+  nav {
+    float: none;
+  }
+}
   

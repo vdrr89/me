@@ -1,32 +1,3 @@
-/* ---------------------- NOTAS ---------------------- */
-
-/* 
-
-NEW THEME
-
-#2e8ad1 celeste / primary color
-#13588d celeste oscuro 
-
-#d93b95 rosa / primary color: hover
-
-#1f1f1f / dark gray / pes haches
-#787878 / light gray
-
-#901 red / cancel
-#290 green / ok
-
-#da1 gold
-#5c4406 dark gold
-
-OLD THEME:
-
-LINKS color principal: #225ea3 (azul link)
-links color secundario: #323dbd (azul violeta)
-
-guardar color para otro momento: #fdfcf7 (casi blanco beige)
-
-*/
-
 /* ---------------------- SELECCIONES ---------------------- */
 
 *::selection {
@@ -90,29 +61,6 @@ label {
   transition: .5s;
 }
 
-/* usada en about */
-.dotted-line-pink, 
-.dotted-line-blue {
-  border-top: 10px dotted white;
-  width: 70%;
-  margin: 0 auto;
-  z-index: 2;
-}
-
-.dotted-line-pink{
-  background-color: hotpink;
-  margin: 2% auto 1% auto;
-}
-
-.dotted-line-blue{
-  background-color: #4169E1;
-  margin: 2% auto;
-}
-
-.dotted-margin-top{
-  margin-top:5%;
-}
-
 /* elemento alineado a la derecha */
 .right-div {
   margin-right: 1%;
@@ -136,18 +84,41 @@ label {
   z-index: 100;
 }
 
-nav {
+.nav {
   position: fixed;
   position: -webkit-sticky; /* Safari */
+  margin: 0 auto;
   display: inline-flex;
-  background-color: #fff;
   width: 100%;
-  z-index: 10;
   top: 0;
+
+  z-index: 10;
+
+  background-color: #fff;
   box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
-nav > .dropdown {
+/* contacto txt/icon cambia si pantalla chica */
+
+.full-text{
+  display: block;
+}
+
+.short-text{
+  display: none;
+}
+
+@media only screen and (max-width: 600px){
+  .full-text{
+    display: none;
+  }
+  
+  .short-text{
+    display: block;
+  }
+}
+
+.nav > .dropdown {
 margin: 4px auto;
 }
 
@@ -155,25 +126,28 @@ margin: 4px auto;
   display: table;
 }
 
-#menu-list {
-display: inline-flex;
-margin: 0 auto;
-width: 100%;
-position: relative;
-}
-
-#menu-projects-list > li{
+#menu-projects-list > .btn-nav-out{
 display: block;
 }
 
 /* ---------------------- ABOUT SHORT ---------------------- */
 
-/* about */
-.shortAbout{
-    max-width: 600px;
-    margin: 0 auto 10% auto;
+.section-title{
+  margin: 10% auto 5% auto;
+  display: table;
 }
 
+/* about explanation */
+.short-about{
+    max-width: 600px;
+    margin: 0 auto 3%;
+}
+
+/* txt gris claro tachado */
+.txt-whisper {
+  color: LightGray; 
+  text-decoration:line-through;
+}
 
 /* ---------------------- ABOUT SKILLS ---------------------- */
 
@@ -190,16 +164,6 @@ display: block;
   row-gap: 16vw;
 }
 
-.item-icon-grid {
-  font-size: 5vw;
-  color: white;
-}
-
-.item-img-grid {
-  width: 100%;
-  color: white;
-}
-
 /* para cambiar color en svg */
 .skills-path {
   fill: white;
@@ -209,6 +173,22 @@ display: block;
 .invertir-color {
   -webkit-filter: invert(100%);
  filter: invert(100%);
+}
+
+.hint-text{
+  display: none;
+  z-index: 2;
+  position: absolute;
+  margin: 100% auto;
+  color: white;
+  font-weight: 800;
+  text-align: center;
+  text-shadow: 1px 2px 1px #4169E1;
+}
+
+/* al hacer hover en un div mostrar otro */
+.progress-container:hover .hint-text{
+  display:block;
 }
 
 /* progress circle */
@@ -236,6 +216,15 @@ display: block;
   position: absolute; /* this is important */
   padding: 20%;
   align-items: center;
+  color: white;
+}
+
+.item-icon-grid {
+  font-size: 5vw;
+}
+
+.item-img-grid {
+  width: 100%;
 }
 
 /* bottom circle */
@@ -308,15 +297,15 @@ display: block;
 	box-shadow: 2px 8px 10px lightgray;
 	background-color:#fff;
   text-shadow:1px 1px 3px gray;
-	border-radius:50%;
+	border-radius:20px;
+  border: 4px solid hotpink;
   cursor:pointer;
 	display:inline-block;
 	padding:24px 31px;
   margin: 0 40%;
-  border: none;
 }
 .btn-short-timeline:hover {
-	background-color:lightgray;
+	background-color:hotpink;
 }
 .btn-short-timeline:active {
 	position:relative;
@@ -325,15 +314,10 @@ display: block;
 
 /* timeline */
 
-#timeline > .card-content{
+.card-content{
   margin: 5% 15%;
   border-radius: 0px;
   padding-left: 20px;
-}
-
-.section-title{
-  margin: 10% auto 5% auto;
-  display: table;
 }
 
 .timeline{
@@ -377,9 +361,6 @@ color: #d93b95;
   line-height: 0.9rem; 
   text-decoration: underline;
 }
-
-/* ---------------------- PROYECTOS: HOME GRID ---------------------- */
-
 
 
 /* ---------------------- PROYECTOS: CARDS ---------------------- */
@@ -456,25 +437,224 @@ color: #d93b95;
   display: table;
 }
 
-/* grid icon link para proyectos */
+/* el grupo de íconos de proyectos */
 .proyectos-table {
-  margin-top: 5%;
-  text-align: center;
+  column-gap: 5%;
+  margin: 5% 20%;
+  display: inline-flex;
+  position: relative;
 }
 
-.proyetos-table-td{
-    padding: 2vw;
-    cursor: pointer;
+/* el botón de proyectos */
+.proyectos-btn{
+  box-shadow: 2px 8px 10px #00000080;
+	background-color: transparent;
+	border-radius:20px;
+  border: 4px solid black;
+
+  text-shadow:1px 1px 3px #00000080;
+
+  cursor:pointer;
+}
+
+.proyectos-btn:hover{
+  background-color: black;
 }
 
 .proyectos-i {
-    font-size: 8vw;
-    transition: all 0.3s ease 0s;
+  padding: 2vw;
+  cursor: pointer;
+  font-size: 8vw;
+  transition: all 0.3s ease 0s;
 }
 
 .proyectos-i:hover {
     color: #fff;
     transform: translateY(7px);
+}
+
+/* ---------------------- PROYECTOS CARDS ---------------------- */
+
+.proyectos-disGraf-cards, 
+.proyectos-disweb-cards, 
+.proyectos-fotog-cards,
+.proyectos-ilus-cards {
+  display: none;
+}
+
+.proyectos-carousel{
+  background-color: hotpink;
+  display: inline-flex;
+  max-height: 500px;
+}
+
+/* .card-carousel{
+  width: 70%;
+} */
+
+/* 
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+.mySlides {
+  display: none;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+} */
+
+.slide-container .prev,
+.slide-container .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: all 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.slide-container .prev:hover,
+.slide-container .next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+}
+
+.slide-container .prev {
+  left: 2px;
+}
+
+.slide-container .next {
+  right: 2px;
+}
+
+.dots-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.dots-container .dot {
+  cursor: pointer;
+  margin: 5px;
+  width: 20px;
+  height: 20px;
+  color: #333;
+  border-radius: 50%;
+  background-color: #dfd6ce;
+}
+
+.dots-container .dot.active {
+  border: 2px solid green;
+}
+
+* {
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100%;
+/*   background-image: linear-gradient(to top, #accbee 0%, #e7f0fd 100%); */
+}
+
+body h1 {
+  text-align: center;
+}
+
+.slide-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 1000px;
+  margin: auto;
+  position: relative;
+}
+
+.slide-container .slide {
+  display: none;
+  width: 100%;
+}
+
+.slide-container .slide.fade {
+  animation: fade 0.5s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+}
+
+.slide-container .slide img {
+  width: 100%;
 }
 
 /* ---------------------- CONTACTO ---------------------- */

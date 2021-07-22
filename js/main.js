@@ -140,3 +140,127 @@ function openTimeline(){
         console.log("openTimeline() else");
     }
 }
+
+// ---------------------- PROYECT CARDS ----------------------
+
+var photoCard = document.getElementById('proyectos-fotog-cards');
+var iluCard = document.getElementById('proyectos-ilus-cards');
+var dwCard = document.getElementById('proyectos-disweb-cards');
+var dgCard = document.getElementById('proyectos-disGraf-cards');
+
+function openPhotoCards(){
+    if(photoCard.style.display === "inline"){
+        photoCard.style.display = "none";
+        console.log('openPhotoCards if');
+    } else {
+        photoCard.style.display = "inline";
+        iluCard.style.display = "none";
+        dwCard.style.display = "none";
+        dgCard.style.display = "";
+        console.log('openPhotoCards else');
+    }
+}
+
+function openIluCards(){
+    if(iluCard.style.display === "inline"){
+        iluCard.style.display = "none";
+        console.log('openIluCards if');
+    } else {
+        iluCard.style.display = "inline";
+        photoCard.style.display = "";
+        dwCard.style.display = "";
+        dgCard.style.display = "";
+        console.log('openIluCards else');
+    }
+}
+
+function openDWCards(){
+    if(dwCard.style.display === "inline"){
+        dwCard.style.display = "none";
+        console.log('openDWCards if');
+    } else {
+        dwCard.style.display = "inline";
+        dgCard.style.display = "";
+        iluCard.style.display = "";
+        photoCard.style.display = "";
+        console.log('openDWCards else');
+    }
+}
+
+function openDGCards(){
+    if(dgCard.style.display === "inline"){
+        dgCard.style.display = "none";
+        console.log('openDGCards if');
+    } else {
+        dgCard.style.display = "inline";
+        dwCard.style.display = "";
+        iluCard.style.display = "";
+        photoCard.style.display = "";
+        console.log('openDGCards else');
+    }
+}
+
+/* carousel proyect cards */
+
+// var slideIndex = [1,1];
+// /* Class the members of each slideshow group with different CSS classes */
+// var slideId = ["mySlides1", "mySlides2", "mySlides3", "mySlides4"]
+// showSlides(1, 0);
+// showSlides(1, 1);
+
+// function plusSlides(n, no) {
+//   showSlides(slideIndex[no] += n, no);
+// }
+
+// function showSlides(n, no) {
+//   var i;
+//   var x = document.getElementsByClassName(slideId[no]);
+//   if (n > x.length) {slideIndex[no] = 1}
+//   if (n < 1) {slideIndex[no] = x.length}
+//   for (i = 0; i < x.length; i++) {
+//     x[i].style.display = "none";
+//   }
+//   x[slideIndex[no]-1].style.display = "block";
+// }
+
+let currentSlide = 0;
+const slides = document.querySelectorAll(".slide")
+const dots = document.querySelectorAll('.dot')
+
+const init = (n) => {
+  slides.forEach((slide, index) => {
+    slide.style.display = "none"
+    dots.forEach((dot, index) => {
+      dot.classList.remove("active")
+    })
+  })
+  slides[n].style.display = "block"
+  dots[n].classList.add("active")
+}
+document.addEventListener("DOMContentLoaded", init(currentSlide))
+const next = () => {
+  currentSlide >= slides.length - 1 ? currentSlide = 0 : currentSlide++
+  init(currentSlide)
+}
+
+const prev = () => {
+  currentSlide <= 0 ? currentSlide = slides.length - 1 : currentSlide--
+  init(currentSlide)
+}
+
+document.querySelector(".next").addEventListener('click', next)
+
+document.querySelector(".prev").addEventListener('click', prev)
+
+
+setInterval(() => {
+  next()
+}, 5000);
+
+dots.forEach((dot, i) => {
+  dot.addEventListener("click", () => {
+    console.log(currentSlide)
+    init(i)
+    currentSlide = i
+  })
+})
