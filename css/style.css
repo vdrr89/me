@@ -77,9 +77,12 @@ label {
 .logo-home{
   max-width:100px;
   display: inline-grid;
-  position: absolute;
   top: 0;
   left: 5%;
+  background-image: url(/img/logos/vdrr89-handmade-black-01.svg);
+  background-repeat: no-repeat;
+  width: 151px;
+  height: 74px;
 }
 
 /* submenu dropdown projects */
