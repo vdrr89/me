@@ -25,26 +25,6 @@ function openDropdown(){
     }
 }
 
-// HACE CLICK EN PANTALLA Y DROPDOWN CIERRA
-
-// las 2 siguientes funciones tienen el mismo problema, se aplican al hacer click incluso en el botón de despleagar dropdown
-
-// window.onclick = function(e){
-//     e.preventDefault();
-//     if(menuProjectsList.style.display === "block"){
-//         menuProjectsList.style.display = "none";
-//         console.log("windows.onclick");
-//     }
-// };
-
-// window.addEventListener("click", function(e){
-//     e.preventDefault();
-//     if(menuProjectsList.style.display === "block"){
-//         menuProjectsList.style.display = "none";
-//         console.log("windows.onclick");
-//     }
-// }) 
-
 
 // ---------------------- NAVBAR LINKS SCROLL TO DIV ----------------------
 
@@ -71,56 +51,6 @@ window.smoothScroll = function(target) {
     scroll(scrollContainer, scrollContainer.scrollTop, targetY, 0);
 }
 
-// ---------------------- PROYECTS TABS ----------------------
-
-var proyTabs = [
-    {
-        varName: 'disWebCards',
-        htmlId: 'tabs-diseno-web',
-        funcName: 'opernProyDisWeb'
-    },
-    {
-        varName: 'fotoCards',
-        htmlId: 'tabs-fotografia',
-        funcName: 'opernProyFoto'
-    },
-    {
-        varName: 'fotoLandCards',
-        htmlId: 'tabs-fotografia-landscape',
-        funcName: 'opernProyFotoLand'
-    },
-    {
-        varName: 'fotoObjCards',
-        htmlId: 'tabs-fotografia-objetos',
-        funcName: 'opernProyFotoObj'
-    },
-    {
-        varName: 'fotoTextCards',
-        htmlId: 'tabs-fotografia-texturas',
-        funcName: 'opernProyFotoText'
-    },
-    {
-        varName: 'fotoFotoIlCards',
-        htmlId: 'tabs-fotografia-fotoilustracion',
-        funcName: 'opernProyFotoIl'
-    },
-    {
-        varName: 'fotoPhotoCards',
-        htmlId: 'tabs-fotografia-photoshop',
-        funcName: 'opernProyFotoPhoto'
-    },
-    {
-        varName: 'disGrafCards',
-        htmlId: 'tabs-diseno-grafico',
-        funcName: 'opernProyDisGraf'
-    },
-    {
-        varName: 'iluCards',
-        htmlId: 'tabs-ilustracion',
-        funcName: 'opernProyIlu'
-    }
-]
-
 // ====================== HOME ======================
 
 // ---------------------- ABOUT TIMELINE: OPEN CLOSE ----------------------
@@ -143,124 +73,120 @@ function openTimeline(){
 
 // ---------------------- PROYECT CARDS ----------------------
 
-var photoCard = document.getElementById('proyectos-fotog-cards');
-var iluCard = document.getElementById('proyectos-ilus-cards');
-var dwCard = document.getElementById('proyectos-disweb-cards');
-var dgCard = document.getElementById('proyectos-disGraf-cards');
+var dwSection = document.getElementById('dw-proj');
+var dgSection = document.getElementById('dg-proj');
+var fotoSection = document.getElementById('foto-proj');
+var iluSection = document.getElementById('ilu-proj');
 
-function openPhotoCards(){
-    if(photoCard.style.display === "inline"){
-        photoCard.style.display = "none";
-        console.log('openPhotoCards if');
+// src name
+var dgSlides = [
+    { 'src': 'img/diseno grafico/01.jpg', 'name': 'dg1'},
+    { 'src': 'img/diseno grafico/02.jpg', 'name': 'dg2'},
+    { 'src': 'img/diseno grafico/03.jpg', 'name': 'dg3'},
+    { 'src': 'img/diseno grafico/04.jpg', 'name': 'dg4'},
+    { 'src': 'img/diseno grafico/05.jpg', 'name': 'dg5'}
+]
+
+var dwSlides = [
+    { 'src': '', 'name': 'dw1'},
+    { 'src': '', 'name': 'dw2'},
+    { 'src': '', 'name': 'dw3'},
+    { 'src': '', 'name': 'dw4'},
+    { 'src': '', 'name': 'dw5'}
+]
+
+var fSlides = [
+    { 'src': 'img/fotografia/fotos/landscape/1.jpg', 'name': 'f1'},
+    { 'src': 'img/fotografia/fotos/objects/06.jpg', 'name': 'f2'},
+    { 'src': 'img/fotografia/fotos/textures/01.jpg', 'name': 'f3'},
+    { 'src': 'img/fotografia/fotos/landscape/10.jpg', 'name': 'f4'},
+    { 'src': 'img/fotografia/fotos/objects/06.jpg', 'name': 'f5'}
+]
+
+var iSlides = [
+    { 'src': 'img/ilustracion/10.jpg', 'name': 'i1'},
+    { 'src': 'img/ilustracion/11.jpg', 'name': 'i2'},
+    { 'src': 'img/ilustracion/12.jpg', 'name': 'i3'},
+    { 'src': 'img/ilustracion/13.jpg', 'name': 'i4'},
+    { 'src': 'img/ilustracion/9.jpg', 'name': 'i5'}
+]
+
+// hacer el click para que el botón abra cada section 
+function openDwSection(){
+    if(dwSection.style.display === "none"){
+        dwSection.style.display = "inline-block";
+        dgSection.style.display = "none";
+        fotoSection.style.display = "none";
+        iluSection.style.display = "none";
     } else {
-        photoCard.style.display = "inline";
-        iluCard.style.display = "none";
-        dwCard.style.display = "none";
-        dgCard.style.display = "";
-        console.log('openPhotoCards else');
+        dwSection.style.display = "none";
+        dgSection.style.display = "none";
+        fotoSection.style.display = "none";
+        iluSection.style.display = "none";
     }
 }
 
-function openIluCards(){
-    if(iluCard.style.display === "inline"){
-        iluCard.style.display = "none";
-        console.log('openIluCards if');
+
+function openDgSection(){
+    if(dgSection.style.display === "none"){
+        dwSection.style.display = "none";
+        dgSection.style.display = "inline-block";
+        fotoSection.style.display = "none";
+        iluSection.style.display = "none";
     } else {
-        iluCard.style.display = "inline";
-        photoCard.style.display = "";
-        dwCard.style.display = "";
-        dgCard.style.display = "";
-        console.log('openIluCards else');
+        dwSection.style.display = "none";
+        dgSection.style.display = "none";
+        fotoSection.style.display = "none";
+        iluSection.style.display = "none";
     }
 }
 
-function openDWCards(){
-    if(dwCard.style.display === "inline"){
-        dwCard.style.display = "none";
-        console.log('openDWCards if');
+function openFotoSection(){
+    if(fotoSection.style.display === "none"){
+        dwSection.style.display = "none";
+        dgSection.style.display = "none";
+        fotoSection.style.display = "inline-block";
+        iluSection.style.display = "none";
     } else {
-        dwCard.style.display = "inline";
-        dgCard.style.display = "";
-        iluCard.style.display = "";
-        photoCard.style.display = "";
-        console.log('openDWCards else');
+        dwSection.style.display = "none";
+        dgSection.style.display = "none";
+        fotoSection.style.display = "none";
+        iluSection.style.display = "none";
     }
 }
 
-function openDGCards(){
-    if(dgCard.style.display === "inline"){
-        dgCard.style.display = "none";
-        console.log('openDGCards if');
+function openIluSection(){
+    if(iluSection.style.display === "none"){
+        dwSection.style.display = "none";
+        dgSection.style.display = "none";
+        fotoSection.style.display = "none";
+        iluSection.style.display = "inline-block";
     } else {
-        dgCard.style.display = "inline";
-        dwCard.style.display = "";
-        iluCard.style.display = "";
-        photoCard.style.display = "";
-        console.log('openDGCards else');
+        dwSection.style.display = "none";
+        dgSection.style.display = "none";
+        fotoSection.style.display = "none";
+        iluSection.style.display = "none";
     }
 }
 
-/* carousel proyect cards */
 
-// var slideIndex = [1,1];
-// /* Class the members of each slideshow group with different CSS classes */
-// var slideId = ["mySlides1", "mySlides2", "mySlides3", "mySlides4"]
-// showSlides(1, 0);
-// showSlides(1, 1);
-
-// function plusSlides(n, no) {
-//   showSlides(slideIndex[no] += n, no);
-// }
-
-// function showSlides(n, no) {
-//   var i;
-//   var x = document.getElementsByClassName(slideId[no]);
-//   if (n > x.length) {slideIndex[no] = 1}
-//   if (n < 1) {slideIndex[no] = x.length}
-//   for (i = 0; i < x.length; i++) {
-//     x[i].style.display = "none";
-//   }
-//   x[slideIndex[no]-1].style.display = "block";
-// }
-
-let currentSlide = 0;
-const slides = document.querySelectorAll(".slide")
-const dots = document.querySelectorAll('.dot')
-
-const init = (n) => {
-  slides.forEach((slide, index) => {
-    slide.style.display = "none"
-    dots.forEach((dot, index) => {
-      dot.classList.remove("active")
-    })
-  })
-  slides[n].style.display = "block"
-  dots[n].classList.add("active")
-}
-document.addEventListener("DOMContentLoaded", init(currentSlide))
-const next = () => {
-  currentSlide >= slides.length - 1 ? currentSlide = 0 : currentSlide++
-  init(currentSlide)
+// for para diseño web
+for (let i=0; i < dwSlides.length; i++){
+    dwSection.innerHTML += '<div class="proj-img"><img src="' + dwSlides[i].src + '" alt="' + dwSlides[i].name + '"></div>'
 }
 
-const prev = () => {
-  currentSlide <= 0 ? currentSlide = slides.length - 1 : currentSlide--
-  init(currentSlide)
+// for para diseño grafico 
+for (let i=0; i < dgSlides.length; i++){
+    dgSection.innerHTML += '<div class="proj-img"><img src="' + dgSlides[i].src + '" alt="' + dgSlides[i].name + '"></div>'
 }
 
-document.querySelector(".next").addEventListener('click', next)
+// for para fotografía 
+for (let i=0; i < fSlides.length; i++){
+    fotoSection.innerHTML += '<div class="proj-img"><img src="' + fSlides[i].src + '" alt="' + fSlides[i].name + '"></div>'
+}
 
-document.querySelector(".prev").addEventListener('click', prev)
+// for para ilustracion 
+for (let i=0; i < iSlides.length; i++){
+    iluSection.innerHTML += '<div class="proj-img"><img src="' + iSlides[i].src + '" alt="' + iSlides[i].name + '"></div>'
+}
 
-
-setInterval(() => {
-  next()
-}, 5000);
-
-dots.forEach((dot, i) => {
-  dot.addEventListener("click", () => {
-    console.log(currentSlide)
-    init(i)
-    currentSlide = i
-  })
-})
