@@ -111,7 +111,7 @@ var iSlides = [
     { 'src': 'img/ilustracion/9.jpg', 'name': 'i5'}
 ]
 
-// hacer el click para que el botón abra cada section 
+// FUNCIÓN PARA ABRIR CADA SECCIÓN DE PROYECTOS 
 function openDwSection(){
     if(dwSection.style.display === "none"){
         dwSection.style.display = "inline-block";
@@ -125,7 +125,6 @@ function openDwSection(){
         iluSection.style.display = "none";
     }
 }
-
 
 function openDgSection(){
     if(dgSection.style.display === "none"){
@@ -170,23 +169,51 @@ function openIluSection(){
 }
 
 
-// for para diseño web
+// FOR PARA CADA SECCIÓN DE PROYECTOS 
 for (let i=0; i < dwSlides.length; i++){
     dwSection.innerHTML += '<div class="proj-img"><img src="' + dwSlides[i].src + '" alt="' + dwSlides[i].name + '"></div>'
 }
 
-// for para diseño grafico 
 for (let i=0; i < dgSlides.length; i++){
     dgSection.innerHTML += '<div class="proj-img"><img src="' + dgSlides[i].src + '" alt="' + dgSlides[i].name + '"></div>'
 }
 
-// for para fotografía 
 for (let i=0; i < fSlides.length; i++){
     fotoSection.innerHTML += '<div class="proj-img"><img src="' + fSlides[i].src + '" alt="' + fSlides[i].name + '"></div>'
 }
 
-// for para ilustracion 
 for (let i=0; i < iSlides.length; i++){
     iluSection.innerHTML += '<div class="proj-img"><img src="' + iSlides[i].src + '" alt="' + iSlides[i].name + '"></div>'
 }
 
+// HORIZONTAL SCROLL PARA PROYECTOS 
+
+var projectsContainer = document.getElementById("projects-container");
+
+function scrollHorizontally(e) {
+    e = window.event || e;
+    // var container = document.getElementById('container'); // projectsContainer
+    var delta = Math.max(-1, Math.min(1, (e.wheelDelta || -e.detail))); // Delta vale 1 en scroll hacia arriba y -1 en scroll hacia abajo
+    
+    projectsContainer.scrollLeft -= (delta*40); // De cuantos pixeles haremos el scroll lateral;
+    console.log("Delta: " + delta); 
+    console.log("projectsContainer ScrollLeft: " + projectsContainer.scrollLeft);
+    console.log("projectsContainer offsetWidth: " + projectsContainer.offsetWidth);
+    console.log("ScrollLeft + offsetWidht: " + (projectsContainer.scrollLeft + projectsContainer.offsetWidth));
+    console.log("projectsContainer offsetWidth: " + projectsContainer.offsetWidth);
+    console.log("projectsContainer scrollWidth: " + projectsContainer.scrollWidth);
+    if ((delta > 0 && projectsContainer.scrollLeft > 0) || (delta < 0 && (projectsContainer.offsetWidth + projectsContainer.scrollLeft) < (projectsContainer.scrollWidth - 1))) {
+      e.preventDefault();
+    }
+  }
+  
+  // Si hay event listener quiere decir que no estamos en IE
+  //if (container.addEventListener) {
+    // IE9, Chrome, Safari, Opera
+    projectsContainer.addEventListener("mousewheel", scrollHorizontally, false);
+    // Firefox
+    projectsContainer.addEventListener("DOMMouseScroll", scrollHorizontally, false);
+  // } else {
+    // IE 6/7/8
+    projectsContainer.attachEvent("onmousewheel", scrollHorizontally);
+  // }

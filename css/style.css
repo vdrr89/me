@@ -443,10 +443,17 @@ color: #d93b95;
   box-sizing: border-box;
   flex: 0 0 auto;
   display: inline-block;
-  width: 400px;
+  /* width: 400px; */
+  /* height: 400px; */
+  background-color: hotpink;
+  border: 6px solid black;
+  border-radius: 10px;
+  margin: 0 1%;
+}
+
+.proj-img > img {
   height: 400px;
-  background-color: #a8a8df;
-  border: 1px solid red;
+  border-radius: 3px;
 }
 
 /* ---------------------- FOOTER ---------------------- */
