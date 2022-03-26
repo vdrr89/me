@@ -165,7 +165,7 @@ function openFotoSection(){
         iluSection.style.display = "none";
     }
 }
-
+ 
 function openIluSection(){
     if(iluSection.style.display === "none"){
         dwSection.style.display = "none";
