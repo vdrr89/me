@@ -1,7 +1,10 @@
+/* ---------------------- COLORES ---------------------- */
+@import "/css/colors.css";
+
 /* ---------------------- SELECCIONES ---------------------- */
 
 *::selection {
-    background-color: #2e8ad1;
+    background-color: var(--blue-middle-color);
     }
 
 html, body{
@@ -26,7 +29,7 @@ html, body{
 /* ---------------------- INABILITADO ---------------------- */
 
 .disabledText{
-    color: #787878 !important;
+    color: var(--gray-middle-color) !important;
 }
 
 .sectionDisabled{
@@ -41,7 +44,7 @@ html, body{
 
 /* FORM */
 .form-box {
-  box-shadow: 0 15px 25px rgba(0,0,0,.6);
+  box-shadow: 0 15px 25px #000;
   border-radius: 10px;
 }
 
@@ -52,11 +55,11 @@ html, body{
   max-width: 800px;
   border-style: solid;
   border-width: 1px;
-  border-color: #000000b2;
+  border-color: var(--black-color);
 }
 
 label {
-  color: #1f1f1f;
+  color: var(--gray-dark-color);
   font-weight: 400;
   transition: .5s;
 }
@@ -91,7 +94,7 @@ label {
   left: 35%;
   top: 11%;
   position: fixed;
-  background-color: #fff;
+  background-color: var(--white-color);
   z-index: 100;
 }
 
@@ -105,8 +108,8 @@ label {
 
   z-index: 10;
 
-  background-color: #fff;
-  box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  background-color: var(--white-color);
+  box-shadow:  0 4px 8px 0 var(--black-transparent-light-color);
 }
 
 /* contacto txt/icon cambia si pantalla chica */
@@ -156,14 +159,14 @@ display: block;
 
 /* txt gris claro tachado */
 .txt-whisper {
-  color: LightGray; 
+  color: var(--gray-light-color); 
   text-decoration:line-through;
 }
 
 /* ---------------------- ABOUT SKILLS ---------------------- */
 
 #about-skills {
-  background-color: #4169E1; /*royalblue*/
+  background-color: var(--blue-strong-color); /*royalblue*/
   display: flow-root;
 }
 
@@ -212,7 +215,7 @@ display: block;
 /* contains title */
 .progress-title-container{
   position: absolute; /* this is important */ 
-  background-color: #4169E1; /*royalblue*/
+  background-color: var(--blue-strong-color); /*royalblue*/
   z-index: 2;
   top: 0.3vw;
   left: 0.3vw;
@@ -227,7 +230,7 @@ display: block;
   position: absolute; /* this is important */
   padding: 20%;
   align-items: center;
-  color: white;
+  color: var(--white-color);
 }
 
 .item-icon-grid {
@@ -300,23 +303,23 @@ display: block;
 
 .short-timeline-item::marker{
   font-size: 3vw;
-  color: #d93b95;
+  color: var(--pink-middle-color);
 }
 
 /* btn open close section */
 .btn-short-timeline {
-	box-shadow: 2px 8px 10px lightgray;
-	background-color:#fff;
-  text-shadow:1px 1px 3px gray;
+	box-shadow: 2px 8px 10px var(--gray-light-color);
+	background-color:var(--white-color);
+  text-shadow:1px 1px 3px var(--white-color);
 	border-radius:20px;
-  border: 4px solid hotpink;
+  border: 4px solid var(--pink-middle-color);
   cursor:pointer;
 	display:inline-block;
 	padding:24px 31px;
   margin: 0 40%;
 }
 .btn-short-timeline:hover {
-	background-color:hotpink;
+	background-color:var(--pink-middle-color);
 }
 .btn-short-timeline:active {
 	position:relative;
@@ -348,7 +351,7 @@ display: block;
 
 .timeline-title::marker{
 font-size: 170%;
-color: #d93b95;
+color: var(--pink-strong-color);
 }
 
 .principal-dot{
@@ -366,7 +369,7 @@ color: #d93b95;
 }
 
 .timeline-instit > a {
-  color: #2eaaff; 
+  color: var(--blue-middle-color); 
   font-weight: 400; 
   font-size: 1rem; 
   line-height: 0.9rem; 
@@ -377,7 +380,7 @@ color: #d93b95;
 
 #proyectos {
   height: 60vh;
-  background-color: hotpink;
+  background-color: var(--pink-middle-color);
   display: flow-root;
 }
 
@@ -396,18 +399,18 @@ color: #d93b95;
 
 /* el botón de proyectos */
 .proyectos-btn{
-  box-shadow: 2px 8px 10px #00000080;
+  box-shadow: 2px 8px 10px var(--black-transparent-middle-color);
 	background-color: transparent;
 	border-radius:20px;
-  border: 4px solid black;
+  border: 4px solid var(--black-color);
 
-  text-shadow:1px 1px 3px #00000080;
+  text-shadow:1px 1px 3px var(--black-transparent-middle-color);
 
   cursor:pointer;
 }
 
 .proyectos-btn:hover{
-  background-color: black;
+  background-color: var(--black-color);
 }
 
 .proyectos-i {
@@ -418,7 +421,7 @@ color: #d93b95;
 }
 
 .proyectos-i:hover {
-    color: #fff;
+    color: var(--white-color);
     transform: translateY(7px);
 }
 
@@ -432,14 +435,14 @@ color: #d93b95;
 }
 
 .projects-container{
-  background-color: hotpink;
+  background-color: var(--pink-middle-color);
   /* display: inline-flex; */
   max-height: 500px;
   display:flex;
   width: 100%;
   /* height: auto; */
   white-space: nowrap;
-  overflow-x: scroll;
+  overflow-x: hidden;
 }
 
 .proj-img{
@@ -448,8 +451,8 @@ color: #d93b95;
   display: inline-block;
   /* width: 400px; */
   /* height: 400px; */
-  background-color: hotpink;
-  border: 6px solid black;
+  background-color: var(--pink-middle-color);
+  border: 6px solid var(--black-color);
   border-radius: 10px;
   margin: 0 1%;
 }
@@ -462,7 +465,7 @@ color: #d93b95;
 /* ---------------------- FOOTER ---------------------- */
 
 #footer{
-  background-color: hotpink;
+  background-color: var(--pink-middle-color);
 }
 
 .footer {
@@ -488,13 +491,13 @@ color: #d93b95;
 }
 
 .footer-icon {
-    color: #fff;
+    color: var(--white-color);
     margin: 0 10px;
     font-size: 2.5rem;
 }
 
 .footer-icon:hover{
-    color: #d93b95;
+    color: var(--pink-strong-color);
 }
 
 
@@ -512,7 +515,7 @@ color: #d93b95;
   position:relative;
   height:30vh;
   text-align:center;
-  background-color: black;
+  background-color: var(--black-color);
 }
 
 .waves {

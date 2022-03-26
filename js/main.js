@@ -73,6 +73,8 @@ function openTimeline(){
 
 // ---------------------- PROYECT CARDS ----------------------
 
+var projectsContainer = document.getElementById('projects-container');
+
 var dwSection = document.getElementById('dw-proj');
 var dgSection = document.getElementById('dg-proj');
 var fotoSection = document.getElementById('foto-proj');
@@ -112,12 +114,20 @@ var iSlides = [
 ]
 
 // FUNCIÓN PARA ABRIR CADA SECCIÓN DE PROYECTOS 
+
+// este if no funca
+if (dwSection.style.display == "none" && dgSection.style.display == "none" && fotoSection.style.display == "none" && iluSection.style.display == "none"){
+    projectsContainer.style.overflowX == hide;
+}
+
+
 function openDwSection(){
     if(dwSection.style.display === "none"){
         dwSection.style.display = "inline-block";
         dgSection.style.display = "none";
         fotoSection.style.display = "none";
         iluSection.style.display = "none";
+        projectsContainer.style.overflowX == scrollHorizontally;
     } else {
         dwSection.style.display = "none";
         dgSection.style.display = "none";
@@ -132,6 +142,7 @@ function openDgSection(){
         dgSection.style.display = "inline-block";
         fotoSection.style.display = "none";
         iluSection.style.display = "none";
+        projectsContainer.style.overflowX == scrollHorizontally;
     } else {
         dwSection.style.display = "none";
         dgSection.style.display = "none";
@@ -146,6 +157,7 @@ function openFotoSection(){
         dgSection.style.display = "none";
         fotoSection.style.display = "inline-block";
         iluSection.style.display = "none";
+        projectsContainer.style.overflowX == scrollHorizontally;
     } else {
         dwSection.style.display = "none";
         dgSection.style.display = "none";
@@ -160,6 +172,7 @@ function openIluSection(){
         dgSection.style.display = "none";
         fotoSection.style.display = "none";
         iluSection.style.display = "inline-block";
+        projectsContainer.style.overflowX == scrollHorizontally;
     } else {
         dwSection.style.display = "none";
         dgSection.style.display = "none";

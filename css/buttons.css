@@ -1,3 +1,5 @@
+@import "/css/colors.css";
+
 /* ---------------------- BUTTONS ---------------------- */
 
 /* BTN NAV */
@@ -5,6 +7,7 @@
 .btn-hamb {
     display: none;
 }
+
 
 nav > button, 
 nav > div > button {
@@ -23,30 +26,30 @@ nav > div > button {
   cursor: pointer;
   border-radius: 0px;
 
-  color: #1f1f1f;
+  color: var(--gray-dark-color);
   border: none;
   background-color: transparent;
-  /* box-shadow: 2px 2px 4px #000000; */
+  /* box-shadow: 2px 2px 4px var(--black-color); */
 
   transition: all 0.3s ease 0s;
   }
   
 .btn-nav-out:hover {
-color: #fff;
-background-color: pink;
-border-color: transparent;
-box-shadow: 0px 15px 20px #1f1f1f9d;
+color: var(--black-color);
+/* background-color: var(--pink-light-color); */
+border: 1px solid var(--black-color);
+box-shadow: 0px 15px 20px var(--black-transparent-middle-color);
 transform: translateY(7px);
 }
 
 .btn-nav-out:active {
-color: #1f1f1f;
-background-color: #d93b95;
-border-color: #1f1f1f;
+color: var(--gray-dark-color);
+background-color: var(--pink-strong-color);
+border-color: var(--gray-dark-color);
 }
 
 .btn-nav-out > a {
-  color: #1f1f1f;
+  color: var(--gray-dark-color);
 }
 
 /* BTN OUT */
@@ -57,32 +60,32 @@ border-color: #1f1f1f;
   padding: 16px 32px;
   border-radius: 0px;
   cursor: pointer;
-  color: #1f1f1f;
-  border-color: #1f1f1f;
-  background-color: #fff;
+  color: var(--gray-dark-color);
+  border-color: var(--gray-dark-color);
+  background-color: var(--white-color);
   transition: all 0.3s ease 0s;
 }
   
 .btn-out:hover, 
 .btn-out-micro:hover,
 .btn-out-micro-alone:hover {
-color: #fff;
-background-color: #1f1f1f;
-border-color: #1f1f1f;
-box-shadow: 0px 15px 20px #1f1f1fad;
+color: var(--white-color);
+background-color: var(--gray-dark-color);
+border-color: var(--gray-dark-color);
+box-shadow: 0px 15px 20px var(--black-transparent-middle-color);
 transform: translateY(7px);
 }
 
 .btn-out:focus, 
 .btn-out-micro:focus {
-box-shadow: 0 0 0 0.25rem #1f1f1f80;
+box-shadow: 0 0 0 0.25rem var(--black-transparent-middle-color);
 }
 
 .btn-out:active, 
 .btn-out-micro:active {
-color: #fff;
-background-color: #1f1f1f;
-border-color: #1f1f1f;
+color: var(--white-color);
+background-color: var(--gray-dark-color);
+border-color: var(--gray-dark-color);
 }
 
 /* BTN GEEN & RED */
@@ -93,19 +96,19 @@ border-color: #1f1f1f;
   padding: 16px 32px;
   border-radius: 0px;
   cursor: pointer;
-  color: #290;
-  border-color: #290;
-  background-color: #fff;
+  color: var(--green-middle-color);
+  border-color: var(--green-middle-color);
+  background-color: var(--white-color);
   transition: all 0.3s ease 0s;
 }
 
 .btn-green:hover, 
 .btn-green-micro:hover,
 .btn-green-micro-alone:hover {
-color: #fff;
-background-color: #290;
+color: var(--white-color);
+background-color: var(--green-middle-color);
 transform: translateY(7px);
-box-shadow: 0px 15px 20px #3c3f3e80
+box-shadow: 0px 15px 20px var(--gray-middle-color);
 }
 
 .btn-red {
@@ -115,18 +118,18 @@ box-shadow: 0px 15px 20px #3c3f3e80
   padding: 16px 32px;
   border-radius: 0px;
   cursor: pointer;
-  color: #901;
-  border-color: #901;
-  background-color: #fff;
+  color: var(--red-middle-color);
+  border-color: var(--red-middle-color);
+  background-color: var(--white-color);
   transition: all 0.3s ease 0s;
 }
 
 .btn-red:hover, 
 .btn-red-micro:hover,
 .btn-red-micro-alone:hover {
-color: #fff;
-background-color: #9b0b0b;
-box-shadow: 0px 15px 20px #9b0b0b80;
+color: var(--white-color);
+background-color: var(--red-middle-color);
+box-shadow: 0px 15px 20px var(--red-middle-transparent-color);
 transform: translateY(7px);
 }
 
@@ -141,9 +144,9 @@ transform: translateY(7px);
   padding: 4px;
   border-radius: 0px;
   cursor: pointer;
-  color: #1f1f1f;
-  border-color: #1f1f1f;
-  background-color: #fff;
+  color: var(--gray-dark-color);
+  border-color: var(--gray-dark-color);
+  background-color: var(--white-color);
   transition: all 0.3s ease 0s;
 }
 
@@ -154,9 +157,9 @@ transform: translateY(7px);
   padding: 4px;
   border-radius: 0px;
   cursor: pointer;
-  color: #290;
-  border-color: #290;
-  background-color: #fff;
+  color: var(--green-middle-color);
+  border-color: var(--green-middle-color);
+  background-color: var(--white-color);
   transition: all 0.3s ease 0s;
 }
 
@@ -167,9 +170,9 @@ transform: translateY(7px);
   padding: 4px;
   border-radius: 0px;
   cursor: pointer;
-  color: #901;
-  border-color: #901;
-  background-color: #fff;
+  color: var(--red-middle-color);
+  border-color: var(--red-middle-color);
+  background-color: var(--white-color);
   transition: all 0.3s ease 0s;
 }
 
@@ -183,7 +186,7 @@ transform: translateY(7px);
   padding: 4px;
   border-radius: 0px;
   cursor: pointer;
-  color: #1f1f1f;
+  color: var(--gray-dark-color);
   border-color: transparent;
   background-color: transparent;
   transition: all 0.3s ease 0s;
@@ -196,7 +199,7 @@ transform: translateY(7px);
   padding: 4px;
   border-radius: 0px;
   cursor: pointer;
-  color: #290;
+  color: var(--green-middle-color);
   border-color: transparent;
   background-color: transparent;
   transition: all 0.3s ease 0s;
@@ -209,7 +212,7 @@ transform: translateY(7px);
   padding: 4px;
   border-radius: 0px;
   cursor: pointer;
-  color: #901;
+  color: var(--red-middle-color);
   border-color: transparent;
   background-color: transparent;
   transition: all 0.3s ease 0s;
@@ -223,15 +226,15 @@ transform: translateY(7px);
   padding: 4px;
   border-radius: 0px;
   cursor: pointer;
-  color: #da1;
+  color: var(--yellow-strong-color);
   border-color: transparent;
   background-color: transparent;
   transition: all 0.3s ease 0s;
 }
 
 .btn-gold-micro-alone:hover {
-  color: #fff;
-  background-color: #da1;
-  box-shadow: 0px 15px 20px #5c4406;
+  color: var(--white-color);
+  background-color: var(--yellow-strong-color);
+  box-shadow: 0px 15px 20px var(--yellow-dark-color);
   transform: translateY(7px);
 }
