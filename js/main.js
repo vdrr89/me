@@ -53,6 +53,76 @@ window.smoothScroll = function(target) {
 
 // ====================== HOME ======================
 
+// ---------------------- ABOUT SKILLS ----------------------
+var progressIcon = document.getElementById('progress-icon');
+
+var skillsIcon = [
+    { 
+        'percentage': '80' , 
+        'icon': '<i class="fab fa-html5"></i>', 
+        'hint': 'HTML' 
+    },
+    { 
+        'percentage': '80' , 
+        'icon': '<i class="fab fa-css3-alt"></i>', 
+        'hint': 'CSS' 
+    },
+    { 
+        'percentage': '20' , 
+        'icon': '<i class="fab fa-js"></i>', 
+        'hint': 'JS' 
+    },
+    { 
+        'percentage': '20' , 
+        'icon': '', 
+        'hint': 'typescript' 
+    },
+    { 
+        'percentage': '30' , 
+        'icon': '<i class="fab fa-git-square"></i>', 
+        'hint': 'GIT' 
+    },
+    { 
+        'percentage': '30' , 
+        'icon': '<i class="fab fa-angular"></i>', 
+        'hint': 'Angular' 
+    },
+    { 
+        'percentage': '85' , 
+        'icon': '', 
+        'hint': 'Photoshop' 
+    },
+    { 
+        'percentage': '80' , 
+        'icon': '', 
+        'hint': 'Illustrator' 
+    }, 
+    { 
+        'percentage': '90' , 
+        'icon': '<i class="fas fa-camera"></i>' , 
+        'hint': 'Photography'
+    },
+    { 
+        'percentage': '70' , 
+        'icon': '<i class="fas fa-paint-brush"></i>' , 
+        'hint': 'Ilustration'
+    },
+    { 
+        'percentage': '90' , 
+        'icon': '' , 
+        'hint': 'office'
+    }, 
+    { 
+        'percentage': '80' , 
+        'icon': '' , 
+        'hint': 'Social Networks'
+    }
+]
+
+for(let i=0; i < skillsIcon.length; i++){
+    progressIcon.innerHTML += '<div class="progress-circle progress-' + skillsIcon[i].percentage + '><span>' + skillsIcon[i].icon + '</span></div><p class="hint-text">' + skillsIcon[i].hint + '</p>'
+}
+
 // ---------------------- ABOUT TIMELINE: OPEN CLOSE ----------------------
 
 var timelineBtn = document.getElementById('btn-short-timeline');

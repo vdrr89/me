@@ -12,7 +12,7 @@ html, body{
 }
 
 .all-background {
-  background: #fff;
+  background: var(--white-color);
   
   overflow: scroll;
   
@@ -42,36 +42,10 @@ html, body{
 
 /* ---------------------- CONTENEDORES / GRAL ---------------------- */
 
-/* FORM */
-.form-box {
-  box-shadow: 0 15px 25px #000;
-  border-radius: 10px;
-}
+/* ---------------------- BORDES ---------------------- */
 
-/* para que el formulario no ocupe toda la pantalla */
-.all-form {
-  margin:0 auto;
-  padding: 10px;
-  max-width: 800px;
-  border-style: solid;
-  border-width: 1px;
-  border-color: var(--black-color);
-}
-
-label {
-  color: var(--gray-dark-color);
-  font-weight: 400;
-  transition: .5s;
-}
-
-/* elemento alineado a la derecha */
-.right-div {
-  margin-right: 1%;
-  float: right;
-  margin: 4px 2px
-}
-
-.background-border-img {
+.background-border-img{
+  background-color: var(--white-color);
   width: 100%;
 }
 
@@ -201,90 +175,17 @@ display: block;
 }
 
 /* al hacer hover en un div mostrar otro */
-.progress-container:hover .hint-text{
+.progress-circle:hover .hint-text{
   display:block;
 }
 
-/* progress circle */
-
-/* contains all */
-.progress-container {
-  position: relative; /* this is important */ 
-}
-
-/* contains title */
-.progress-title-container{
-  position: absolute; /* this is important */ 
-  background-color: var(--blue-strong-color); /*royalblue*/
-  z-index: 2;
-  top: 0.3vw;
-  left: 0.3vw;
-  height: 7.5vw;
-  width: 7.5vw;
-  /* if there are max-width or max-height it should be in vw in % with bottom circle */
-  border-radius: 50%;
-  
-}
-
-.progress-title{
-  position: absolute; /* this is important */
-  padding: 20%;
-  align-items: center;
-  color: var(--white-color);
-}
-
-.item-icon-grid {
-  font-size: 5vw;
-}
-
-.item-img-grid {
-  width: 100%;
-}
-
-/* bottom circle */
-.progress-bottom-circle{
-  position: absolute; /* this is important */
-  /* if there are max-width or max-height it should be in vw in % with contains title */
-  height: 8vw;
-  width: 8vw;
-  border-radius: 50%;
-}
-
-.progress-90{
-  background-image: conic-gradient(white 324deg, #4169E1 330deg); /*royalblue*/
-  /* 90% = (360/10) * 9 = 324 deg */
-  /* change the degrees! witouth degrees is a smooth transition */
-}
-
-.progress-80 {
-  background-image: conic-gradient(white 288deg, #4169E1 300deg); /*royalblue*/  
-/* 80% = (360/10) * 8 = 288 deg */
-}
-
-.progress-70 {
-  background-image: conic-gradient(white 252deg, #4169E1 260deg); /*royalblue*/ 
-/* 70% = (360/10) * 7 = 252 deg */
-}
-
-.progress-40 {
-  background-image: conic-gradient(white 144deg, #4169E1 150deg); /*royalblue*/
-/*  30% = (360/10) * 4 = 144 deg */
-}
-
-.progress-30 {
-  background-image: conic-gradient(white 108deg, #4169E1 115deg); /*royalblue*/ 
-/*  30% = (360/10) * 3 = 108 deg */
-}
-
-.progress-20 {
-  background-image: conic-gradient(white 72deg, #4169E1 80deg); /*royalblue*/
-/* 20% = (360/10) * 2 = 72 deg */
-}
 /* ---------------------- ABOUT TIMELINE ---------------------- */
 
+#about-timeline,
 #short-timeline,
 #timeline {
   padding-bottom: 40px; /* este es xq queda debajo del footer */
+  background-color: var(--white-color);
 }
 
 /* short timeline */

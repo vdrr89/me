@@ -1,0 +1,147 @@
+@import '/css/colors.css';
+
+/* BOTTOM CIRCLE */
+.bottom-circle{
+    position: relative;
+    display: inline-block;
+    margin: 30%;
+    margin: 3rem;
+    width: 170px;
+    height: 170px;
+
+    border-radius: 50%;
+    background-color: var(--blue-strong-color);
+
+    -webkit-animation: colorload 2s;
+    animation: colorload 2s; 
+  }
+  
+  /* TOP CIRCLE */
+  .top-circle{
+    position: absolute; /* this is important */
+    display: block; 
+    z-index: 1;
+    padding: 2.5rem;
+    left: 3%;
+    top: 3%;
+    width: 160px;
+    height: 160px;
+    line-height: 60px;
+    margin-left: 0px;
+    margin-top: 0px;
+    text-align: center;
+
+    background-color: var(--blue-strong-color);
+    border: 2px transparent;
+    border-radius: 50%;
+    
+  }
+
+/* PROGRESS */
+
+.progress-90 {
+    background-image: conic-gradient( var(--black-color) 342deg, var(--white-color) 18deg); 
+    /*  95% = 36 * 9.5 = 342 deg */
+    /* 360 deg - 324 deg =  18 deg */
+}
+
+.progress-90 {
+    background-image: conic-gradient( var(--black-color) 324deg, var(--white-color) 36deg); 
+    /*  90% = 36 * 9 = 324 deg */
+    /* 360 deg - 324 deg =  36 */
+}
+
+.progress-85 {
+    background-image: conic-gradient( var(--black-color) 306deg, var(--white-color) 54deg); 
+    /*  85% = 36 * 8.5 = 306 deg */
+    /* 360 deg - 288 deg =  54 deg */
+}
+
+.progress-80 {
+    background-image: conic-gradient( var(--black-color) 288deg, var(--white-color) 54deg); 
+    /*  80% = 36 * 8 = 288 deg */
+    /* 360 deg - 288 deg =  54 deg */
+}
+
+.progress-75 {
+    background-image: conic-gradient( var(--black-color) 270deg, var(--white-color) 90deg); 
+    /*  75% = 36 * 7.5 = 270 deg */
+    /* 360 deg - 288 deg =  90 deg */
+}
+
+
+.progress-70 {
+    background-image: conic-gradient( var(--black-color) 252deg, var(--white-color) 108deg); 
+    /*  70% = 36 * 7 = 252 deg */
+    /* 360 deg - 252 deg =  108 deg */
+}
+
+.progress-65 {
+    background-image: conic-gradient( var(--black-color) 234deg, var(--white-color) 126deg); 
+    /*  65% = 36 * 6.5 = 234 deg */
+    /* 360 deg - 234 deg =  126 deg */
+}
+
+.progress-60 {
+    background-image: conic-gradient( var(--black-color) 216deg, var(--white-color) 144deg); 
+    /*  60% = 36 * 6 = 216 deg */
+    /* 360 deg - 216 deg =  144 deg */
+}
+
+.progress-55 {
+    background-image: conic-gradient( var(--black-color) 198deg, var(--white-color) 162deg); 
+    /*  55% = 36 * 5.5 = 198 deg */
+    /* 360 deg - 198 deg =  162 deg */
+}
+
+.progress-50 {
+    background-image: conic-gradient( var(--black-color) 180deg, var(--white-color) 180deg); 
+    /*  50% = 36 * 5 = 180 deg */
+    /* 360 deg - 180 deg = 180 deg */
+}
+
+.progress-45 {
+    background-image: conic-gradient( var(--black-color) 162deg, var(--white-color) 198deg); 
+    /*  45% = 36 * 4.5 = 162 deg */
+    /* 360 deg - 162 deg = 198 deg */
+}
+
+.progress-40 {
+    background-image: conic-gradient( var(--black-color) 144deg, var(--white-color) 150deg); 
+    /* 40% = 36 * 4 = 144 deg */
+}
+
+.progress-35 {
+    background-image: conic-gradient( var(--black-color) 126deg, var(--white-color) 150deg); 
+  /*  35% = 36 * 3.5 = 126 deg */
+}
+
+.progress-30 {
+    background-image: conic-gradient( var(--black-color) 108deg, var(--white-color) 150deg); 
+    /*  30% = 36 * 3 = 108 deg */
+}
+
+.progress-25 {
+    background-image: conic-gradient( var(--black-color) 90deg, var(--white-color) 150deg); 
+    /*  25% = 36 * 2.5 = 90 deg */
+}
+
+.progress-20 {
+    background-image: conic-gradient( var(--black-color) 72deg, var(--white-color) 150deg); 
+    /*  20% = 36 * 2 = 72 deg */
+}
+
+.progress-15 {
+    background-image: conic-gradient( var(--black-color) 54deg, var(--white-color) 150deg); 
+    /*  15% = 36 * 1.5 = 54 deg */
+}
+
+.progress-10 {
+    background-image: conic-gradient( var(--black-color) 36deg, var(--white-color) 150deg); 
+    /*  10% = 36 * 1 = 36 deg */
+}
+
+.progress-5 {
+    background-image: conic-gradient( var(--black-color) 18deg, var(--white-color) 150deg); 
+    /*  5% = 36 * 0.5 = 18 deg */
+}
