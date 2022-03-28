@@ -43,6 +43,12 @@
   margin-top: 1rem;
   color: red; }
 
+  /* SPECIAL ICONS */
+
+  .img-icons{
+    max-width: 80px;
+  }
+
   .progress-circle.progress-0:after {
     background-image: linear-gradient(90deg, var(--blue-strong-color) 50%, transparent 50%, transparent), linear-gradient(90deg, var(--white-color) 50%, var(--blue-strong-color) 50%, var(--blue-strong-color)); }
   

@@ -144,14 +144,6 @@ display: block;
   display: flow-root;
 }
 
-.grid-container {
-  margin: 10% 20%;
-  display: grid;
-  grid-template-columns: repeat(4, 8vw);
-  column-gap: 8vw;
-  row-gap: 16vw;
-}
-
 /* para cambiar color en svg */
 .skills-path {
   fill: white;
