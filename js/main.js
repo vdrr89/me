@@ -120,7 +120,7 @@ var skillsIcon = [
 ]
 
 for(let i=0; i < skillsIcon.length; i++){
-    progressIcon.innerHTML += '<div class="progress-circle progress-' + skillsIcon[i].percentage + '><span>' + skillsIcon[i].icon + '</span></div><p class="hint-text">' + skillsIcon[i].hint + '</p>'
+    progressIcon.innerHTML += '<div class="progress-circle progress-' + skillsIcon[i].percentage + '"><span>' + skillsIcon[i].icon + '</span></div><p class="hint-text">' + skillsIcon[i].hint + '</p>'
 }
 
 // ---------------------- ABOUT TIMELINE: OPEN CLOSE ----------------------
