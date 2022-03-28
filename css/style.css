@@ -371,7 +371,10 @@ color: var(--pink-strong-color);
 }
 
 .footer-title{
-  text-shadow: 2px 2px 4px #ffffff;
+  color: var(--black-color);
+  text-shadow: 0px 0px 5px var(--white-color);
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: var(--white-color);
 }
 
 .footer-ul {

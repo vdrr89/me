@@ -133,9 +133,6 @@ function switchTextHint(){
     }
 }
 
-if(progressCircle = hover){
-    textHint.style.display = "block";
-}
 
 // ---------------------- ABOUT TIMELINE: OPEN CLOSE ----------------------
 
