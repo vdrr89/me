@@ -1,3 +1,5 @@
+@import "/css/colors.css";
+
 /* ====================== SMALL DEVICES ====================== */
 
 @media only screen and (max-width: 900px) {
@@ -39,8 +41,8 @@
   }
 
   .btn-nav-out{
-    padding: 3vw;
-    margin: 0;
+    padding: 1vw;
+    margin: 0 auto;
     transition: none;
     top: 0;
   }
@@ -197,15 +199,19 @@
 @media only screen and (max-width: 600px){
   /* about: skills */
 
+  #progress-icon {
+    text-align: center;
+  }
+
   .progress-circle {
-    margin: 1rem;
+    margin: 0.5rem;
     width: 90px;
     height: 90px;
   }
 
   .progress-circle span {
     font-size: 3rem;
-    padding-top: 1rem;
+    padding-top: 0.5rem;
     padding-left: 1.3rem;
     left: 6%;
     top: 6%;
@@ -218,6 +224,15 @@
   .progress-icon > .span > .icon{
     display: block;
     margin-top: 0.3rem;
+  }
+
+  .img-icons {
+    max-width: 45px;
+  }
+
+  .progress-circle .span svg {
+    width: 57px;
+    display: block;
   }
 
   /* posts en grid */
