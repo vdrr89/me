@@ -1,6 +1,6 @@
 # Instructions
 
-|: [Go to readme](https://github.com/vdrr89/me/blob/master/README.md) :|: [Go to my Github profile](https://github.com/vdrr89) :|: [Go to General Posts](https://github.com/vdrr89/posts) :|
+| [Go to readme](https://github.com/vdrr89/me/blob/master/README.md) | [Go to my Github profile](https://github.com/vdrr89) | [Go to General Posts](https://github.com/vdrr89/posts) |
 
 
 ---
