@@ -138,6 +138,7 @@ display: block;
 }
 
 /* ---------------------- ABOUT SKILLS ---------------------- */
+@import "/css/progress-circle.css";
 
 /* vdrr89 // fix icons! */
 #about-skills {
