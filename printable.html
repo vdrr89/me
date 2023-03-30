@@ -60,8 +60,7 @@
         <!-- SKILLS -->
         <div>
             <h3 class="printable-h3">Skills</h3>
-            <div id="skill-list"></div>
-            <!-- traer del main.js la var skillsIcon que contiene la lista de las skills con su % -->
+            <div id="skills-list"></div>
         </div>
 
         <!-- STUDIES -->
@@ -98,15 +97,25 @@
             contactWay.innerHTML += '<li><a '+contact[i].kindOfLink+'="'+contact[i].link+'" target="_blank">'+contact[i].linkText+'</a></li>'
         }
 
+        // Skills
+        var skillsList = document.getElementById("skills-list");
+        for (let i=0; i < skillsIcon.length; i++){
+            skillsList.innerHTML += '<div class="list-item"><div class="progressbar"><div style="width: '+skillsIcon[i].percentage+'%"></div></div><p class="skills-text">'+skillsIcon[i].hint+'</p></div>'
+        }
+
         // Portfolios
         var portfolios = document.getElementById('portfolios');
         for (let i=0; i < socialNetworks.length; i++){
             portfolios.innerHTML += '<li>'+socialNetworks[i].name+': <a href="'+socialNetworks[i].link+'" target="_blank">'+socialNetworks[i].writtenLink+'</a></li>'
         }
 
-
-
         // -- CENTRAL AREA
+
+        // Skills
+        var studyList = document.getElementById('study-list');
+        for (let i=0; i < education.length; i++){
+            studyList.innerHTML += '<li><span class="item-primary">'+education[i].instituto+'</span> | <span class="item-sencondary">'+education[i].institutoDetalle+'</span> | '+education[i].curso+'</li>'
+        }
 
         // Study
         var studyList = document.getElementById('study-list');
@@ -114,10 +123,13 @@
             studyList.innerHTML += '<li><span class="item-primary">'+education[i].instituto+'</span> | <span class="item-sencondary">'+education[i].institutoDetalle+'</span> | '+education[i].curso+'</li>'
         }
 
-        // Work
+        // Work & References
         var jobList = document.getElementById('job-list');
+        var referenceslist = document.getElementById('references-list');
+ 
         for (let i=0; i < workExperience.length; i++){
-            jobList.innerHTML += '<li><span class="item-primary">'+workExperience[i].place+'</span> | <span class="item-sencondary">'+workExperience[i].job+'</span> | '+workExperience[i].time+'</li>'
+            jobList.innerHTML += '<li><span class="item-primary">'+workExperience[i].place+'</span> | <span class="item-sencondary">'+workExperience[i].job+'</span> | '+workExperience[i].time+'</li>';
+            referenceslist.innerHTML += '<li><span class="item-primary">'+workExperience[i].referenceName+'</span> | <span class="item-sencondary">'+workExperience[i].place+' • '+workExperience[i].referenceJob+'</span> | '+workExperience[i].referenceContact+'</li>'
         }
 
 

@@ -37,12 +37,12 @@ html, body{
 /* ---------------------- SIDEBAR ---------------------- */
 
 #printable-sidebar{
-background-color: var( --gray-middle-color);
+    background-color: var( --gray-middle-color);
 
-display: inline-block;
-width: 25%;
-height: 100%;
-padding: 2%;
+    display: inline-block;
+    width: 25%;
+    height: 100%;
+    padding: 2%;
 }
 
 .profile-pic{
@@ -63,4 +63,34 @@ padding: 2%;
     width: 75%;
     height: 100%;
     float: right;
+}
+
+/* -- Progress Bar -- */
+#skills-list{
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+}
+
+.list-item{
+    margin: 5% auto;
+}
+
+.progressbar {
+    background-color: #c0c0c0; /*gray*/
+    border-radius: 0.5em;
+    padding: 0.6%;
+    width: 100%;
+    margin: 0 auto;
+} 
+.progressbar > div {
+    background-color: #d93b95; /* pink */
+    height: 1em;
+    border-radius: 0.4em;
+} 
+
+.skills-text{
+    font-family: Arial, sain serif;
+    font-weight: bold;
+    font-size: 0.7em;  
+    margin:1%;
 }
