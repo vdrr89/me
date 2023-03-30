@@ -1,0 +1,66 @@
+/* colores y fuentes */
+@import "/css/colors.css";
+@import "/css/fonts.css";
+
+/* bootstrap icons */
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css");
+
+/* ---------------------- GENERAL ---------------------- */
+
+html, body{
+    height: 100%;
+  }
+
+/* ---------------------- FONTS ---------------------- */
+
+#printable-sidebar p,
+#printable-sidebar a{
+    color: var(--white-color);
+    font-weight: 500;
+    font-size: 12pt;
+}
+
+.printable-h3{
+    font-size: 24pt;
+}
+
+.item-primary{
+    font-weight: 600;
+}
+
+.item-sencondary{
+    font-weight: 600;
+    color: var(--gray-middle-color);
+}
+
+
+/* ---------------------- SIDEBAR ---------------------- */
+
+#printable-sidebar{
+background-color: var( --gray-middle-color);
+
+display: inline-block;
+width: 25%;
+height: 100%;
+padding: 2%;
+}
+
+.profile-pic{
+    max-width: 100%;
+    border-radius: 50%;
+}
+
+#printable-sidebar div{
+    margin: 5% auto;
+}
+
+/* ---------------------- CENTRAL AREA ---------------------- */
+
+#printable-central-area{
+    display: inline-block;
+    margin: 0 auto;
+    padding: 5%;
+    width: 75%;
+    height: 100%;
+    float: right;
+}

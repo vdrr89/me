@@ -16,6 +16,9 @@ Este está compuesto por 2 archivos: **uno para ser visto en pc** y **otro para 
 A ellos se les agregan otras hojas CSS, una con variables de la paleta de **colores**, otra con la lista de **botones** disponibles, otra con las variables de las **fuentes** a utilizar, otra para los **círculos** utlizados en 'My Skills' section.
 
 
+( *recordar siempre importar a cada nueva planilla CSS las de:*
+*colores, fuentes, bootstrap, awesomefonts* )
+
 ---
 
 
