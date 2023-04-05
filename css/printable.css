@@ -1,27 +1,28 @@
-/* colores y fuentes */
-@import "/css/colors.css";
-@import "/css/fonts.css";
-
-/* bootstrap icons */
-@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css");
-
 /* ---------------------- GENERAL ---------------------- */
-
+/*
 html, body{
     height: 100%;
-  }
+}
+*/
+
+@page {
+    size: A4;
+}
+
+table, figure {
+    page-break-inside: avoid;
+}
+
+.central-area-card{
+    margin: 10% auto;
+}
 
 /* ---------------------- FONTS ---------------------- */
 
 #printable-sidebar p,
 #printable-sidebar a{
     color: var(--white-color);
-    font-weight: 500;
-    font-size: 12pt;
-}
-
-.printable-h3{
-    font-size: 24pt;
+    font-weight: 400;
 }
 
 .item-primary{
@@ -33,6 +34,12 @@ html, body{
     color: var(--gray-middle-color);
 }
 
+h1, h2, h3, h4 {font-size: 1.5em;}
+h5, h6 {font-size: 1.3em;}
+p, li, td, blockquote, .special, a {font-size: 1em;}
+.small {font-size: 0.7em;}
+
+.central-area-hint-text{font-size: 10pt;}
 
 /* ---------------------- SIDEBAR ---------------------- */
 
@@ -59,7 +66,7 @@ html, body{
 #printable-central-area{
     display: inline-block;
     margin: 0 auto;
-    padding: 5%;
+    padding: 0 5%;
     width: 75%;
     height: 100%;
     float: right;
@@ -72,18 +79,18 @@ html, body{
 }
 
 .list-item{
-    margin: 5% auto;
+    margin: 0 5%;
 }
 
 .progressbar {
-    background-color: #c0c0c0; /*gray*/
+    background-color: var(--gray-middle-color);
     border-radius: 0.5em;
     padding: 0.6%;
     width: 100%;
     margin: 0 auto;
 } 
 .progressbar > div {
-    background-color: #d93b95; /* pink */
+    background-color: var(--pink-middle-color); /* pink */
     height: 1em;
     border-radius: 0.4em;
 } 

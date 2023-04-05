@@ -114,14 +114,14 @@ var education = [
         'institutoDetalle': '',
         'curso': 'LDCV',
         'cursoDetalle': 'Licenciatura en Diseño de Comunicación Visual',
-        'detalle':''
+        'detalle':'Creación de piezas gráficas, editorial, packaging, contenido multimeida, Fotografía.'    
     },
     {
         'instituto': 'GA',
         'institutoDetalle': 'General Assembly',
         'curso': 'HTML y CSS',
         'cursoDetalle':'',
-        'detalle':''
+        'detalle':'o HTML and CSS with '
     },
     {
         'instituto': 'IDF',
@@ -152,43 +152,51 @@ var workExperience = [
         'place':'Fidemar',
         'job': 'Auxiliar Administrativo',
         'time':'2021 - 2023',
+        'detalle':'Caja (cobro a los clientes mediante dinero en efectivo, tarjeta, cheques y depósitos bancarios), arqueo, recepción de clientes en local y vía telefónica derivando las llamadas; Ingreso de documentación al sistema, relacionar documentos digital y fisicamente, archivo de documentos, trámites ante instituciones públicas y privadas referentes a la empresa y sus vehículos.',
         'referenceName': 'Claudio Beinhacker',
         'referenceJob': 'Director',
-        'referenceContact': '09X XXX XXX'
+        'referenceContact': '099 441 931'
     },
     {
         'place':'Calado Design',
-        'job': 'Auxiliar de Diseño y Redes Sociales',
+        'job': 'Auxiliar de Diseño de Packaging y Redes Sociales',
         'time':'',
+        'detalle':'Auxiliar en packaging, toma de fotografías y su publicación en redes sociales, gestión de comunicación con los clientes, entre otros.',
         'referenceName': 'Mayra Acuña',
         'referenceJob': 'Directora',
-        'referenceContact': '09X XXX XXX'
+        'referenceContact': '095 731 866'
+    },
+    {
+        'place':'Districomp',
+        'job': 'Diseño Gráfico y Web',
+        'time':'',
+        'detalle':'Creación de piezas gráficas para impresión o digital, como por ejemplo mailings, banners para la web, botones para la web, estampados para ropa, vehículos, diseño para tarjetería y documentación administrativa, entre otros.',
+        'referenceName': 'Gabriel Insiburo',
+        'referenceJob': '',
+        'referenceContact': '091 230 618'
     },
     {
         'place':'P. Alciaturi',
         'job': 'Promotora',
         'time':'',
+        'detalle':'Promotora de diversos productos y servicios, entrega de folletería en vía pública y locales, recepción de clientes, caja (cobro a clientes en efectivo y con tarjeta), cuidado de niños, degustaciones.',
         'referenceName': 'Pamela Alciaturi',
         'referenceJob': 'Director',
-        'referenceContact': '09X XXX XXX'
-    },
-    {
-        'place':'J.Romero',
-        'job': 'Auxiliar Administrativo y Cadete',
-        'time':'',
-        'referenceName': 'Julio Romero',
-        'referenceJob': 'Director',
-        'referenceContact': '099 612 303'
-    },
+        'referenceContact': '099 413 398'
+    }
+]
+
+/* -- referencias ocultas
     {
         'place':'Mosca',
         'job': 'Vendedora',
         'time':'',
+        'jobDetail':'Auxiliar de ventas en salón, atención al cliente.',
         'referenceName': 'Ana',
         'referenceJob': 'Encargada',
         'referenceContact': '09X XXX XXX'
     }
-]
+*/
 
 // ---------------------- CONTACT ----------------------
 var contact = [
