@@ -1,5 +1,6 @@
 @import '/css/colors.css';
 
+/* este los organiza */
 .progress-circle {
   position: relative;
   display: inline-block;
@@ -38,6 +39,7 @@
   border-radius: 50%;
   background: var(--blue-strong-color);
   z-index: 1; }
+
 
 .progress-circle span:after {
   content: "";

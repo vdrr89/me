@@ -173,6 +173,12 @@ display: block;
   display:block;
 }
 
+/* ---------------------- TEXT GROUP ---------------------- */
+
+.text-group{
+  margin: 3rem 0;
+}
+
 /* ---------------------- ABOUT TIMELINE ---------------------- */
 
 #about-timeline,
