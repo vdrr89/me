@@ -108,6 +108,8 @@ function openTimeline(){
     }
 }
 
+
+
 // ---------------------- PROYECT CARDS ----------------------
 
 var projectsContainer = document.getElementById('projects-container');

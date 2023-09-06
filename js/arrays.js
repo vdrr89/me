@@ -4,7 +4,7 @@ console.log("arrays.js opened");
 var aboutTxt =[
     {
         'whoIAm':'Soy Verónica, vivo en Montevideo, Uruguay.',
-        'whatIDid': 'Estudié / estudio / seguiré estudiando sobre diseño de comunicación visual, desarrollo web, fotografía, y otras áreas relacionadas con la expresión visual.',
+        'whatIDid': 'Estoy estudiando diseño de comunicación visual, desarrollo web, fotografía, y otras áreas relacionadas con la expresión visual.',
         'continueToWeb': 'Aquí debajo te dejo un poco más de información sobre mi...'
     }
 ]
